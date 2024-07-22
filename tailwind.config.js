@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const plugin = require("tailwindcss/plugin");
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +13,27 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        grayBLue: "#6f87a0eb",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    plugin(
+      function ({ addVariant }) {
+        addVariant("glow", ".glow-capture .glow-overlay &");
+      },
+      {
+        theme: {
+          extend: {
+            colors: {
+              // https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix
+              glow: "color-mix(in srgb, var(--glow-color) calc(<alpha-value> * 100%), transparent)",
+            },
+          },
+        },
+      }
+    ),
+  ],
 };
