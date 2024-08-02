@@ -9,7 +9,7 @@ import card_pic_1 from "../../public/home/card_pic_1.webp";
 import card_pic_2 from "../../public/home/card_pic_2.webp";
 import card_pic_3 from "../../public/home/card_pic_3.webp";
 import card_pic_4 from "../../public/home/card_pic_4.webp";
-import hover_pic_1 from "../../public/home/hover_pic_1.webp";
+import hover_pic_1 from "../../public/home/hover_pic_1.jpg";
 import hover_pic_2 from "../../public/home/hover_pic_2.webp";
 import hover_pic_3 from "../../public/home/hover_pic_3.webp";
 import hover_double_pic_1 from "../../public/home/hover_double_pic_1.webp";
