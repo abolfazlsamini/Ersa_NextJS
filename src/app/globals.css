@@ -2,37 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  p {
+    @apply font-creato_medium my-4;
+    color: #6f87a0eb;
+  }
+  h2 {
+    @apply font-creato_medium text-2xl font-bold sm:text-4xl;
+    background-image: linear-gradient(140deg, white, #bdd7f180);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  h1 {
+    @apply font-creato_medium py-1 text-4xl font-bold sm:text-6xl;
+    background-image: linear-gradient(140deg, white, #bdd7f180);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  /* * {
+    outline: 1px red solid;
+  } */
+}
 @layer components {
+  .image_test {
+    transform: translate3d(2.99904%, -1.58142em, 0px) scale3d(1, 1, 1)
+      rotateX(8.631deg) rotateY(-24.9984deg) rotateZ(14.9992deg) skew(0deg);
+    transform-style: preserve-3d;
+  }
   .glow_btn {
-    @apply w-max;
-  }
-  .glow_btn div {
-    /* @apply text-grayBLue hover:text-white; */
-    @apply text-grayBLue hover:text-white px-3 py-2 border;
-
-    background-color: rgba(0, 0, 0, 0);
-    background-image: 0 0 0 -10px #56f, inset -15px 13px 30px 0 #132436,
-      inset 20px -55px 30px 0 #132436;
-    transition: 0.5s ease-out;
-  }
-  .glow_btn:hover div {
-    background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(20deg, #2a3ded, #6472f3);
-    box-shadow: 0 7px 80px -12px #56f, inset 0 0 0 0 rgba(19, 36, 54, 0),
-      inset 0 0 0 0 rgba(19, 36, 54, 0);
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-      background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    @apply text-grayBLue hover:text-white px-3 py-2 border;
+    background-color: #0000;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.9em 1.8em;
+    border-radius: 50px;
+    /* font-size: 30px; */
+    font-family: arial;
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow:
+      0 0 0 -10px #5566ff,
+      inset -15px 13px 30px 0 rgb(19 36 54),
+      inset 20px -55px 30px 0 rgb(19 36 54);
+  }
+  .glow_btn:hover {
+    box-shadow:
+      0 7px 80px -12px #56f,
+      inset 0 0 0 0 #13243600,
+      inset 0 0 0 0 #13243600;
+  }
+  .unGlow_btn {
+    background-image: linear-gradient(20deg, #2a3ded, #6472f3);
+    background-color: #0000;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.9em 1.8em;
+    border-radius: 50px;
+    /* font-size: 30px; */
+    font-family: arial;
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow:
+      0 7px 80px -12px #56f,
+      inset 0 0 0 0 #13243600,
+      inset 0 0 0 0 #13243600;
+  }
+  .unGlow_btn:hover {
+    background-image: linear-gradient(20deg, #2a3ded, #6472f3);
+    box-shadow:
+      0 0 0 -10px #5566ff,
+      inset -15px 13px 30px 0 rgb(19 36 54),
+      inset 20px -55px 30px 0 rgb(19 36 54);
   }
 }
 
 :root {
   --foreground-rgb: 255, 255, 255;
 }
-
+.mask_bg {
+  /* z-index: -10; */
+  width: 100%;
+  background-position:
+    50% 100%,
+    0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: contain, auto;
+  background-attachment: scroll, scroll;
+  /* position: relative;
+  top: 30%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%; */
+  background-image: url(../../public/home/mask_bg_1.webp),
+    radial-gradient(
+      circle farthest-corner at 50% -360%,
+      #070f17 84%,
+      #56f 93%,
+      #fff
+    );
+}
 .glow-overlay {
-  --glow-size: 25rem;
-
+  --glow-size: 35rem;
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -43,14 +113,107 @@
     var(--glow-color) 1%,
     transparent 50%
   );
-  transition: 400ms mask ease;
-  will-change: mask;
-}
-.mainPic:hover {
-  /* transform: rotate3d(0, 1, 0, 60deg);
-  transform-style: preserve-3d; */
+  transition: opacity 1000ms;
+  /* transition-delay: 900ms; */
+  /* transition: 4000ms all ease; */
+  /* will-change: mask; */
 }
 
+.mainPic {
+  /* transform: rotate3d(0, 0, 0, 20deg); */
+  /* transform: rotateY(var(--y)); */
+  transform: perspective(1000px) translate3d(0px, var(--mainPic-trans-y), 0px)
+    scale3d(1, 1, 1) rotateX(var(--mainPic-rot-y)) rotateY(var(--mainPic-y))
+    rotateZ(0deg) skew(0deg);
+  /* transform: perspective(100px) rotateX(var(--trans-y)); */
+  /* transform-style: preserve-3d; */
+  transition-duration: 900ms;
+  will-change: transform;
+  /* perspective: 1300px; */
+}
+.cardhoverpic {
+  transition-duration: 900ms;
+  transform: translate3d(
+      var(--cardhoverpic-tran-x, 30%),
+      var(--cardhoverpic-tran-y, -1.6em),
+      0px
+    )
+    rotateX(var(--cardhoverpic-rot-x, 1deg))
+    rotateY(var(--cardhoverpic-rot-y, 1deg))
+    rotateZ(var(--cardhoverpic-rot-z, 10deg)) skew(0deg);
+}
+.hoverpic1 {
+  transition: 700ms transform;
+  transform: translate3d(
+      var(--hoverpic-tran-x, 30%),
+      var(--hoverpic-tran-y, 2.6em),
+      0px
+    )
+    rotateX(var(--hoverpic-rot-x, 10deg)) rotateY(var(--hoverpic-rot-y, 10deg))
+    rotateZ(var(--hoverpic-rot-z, 10deg)) skew(0deg);
+}
+.hoverpic2 {
+  transition: 700ms transform;
+  transform: translate3d(
+      var(--hoverpic-tran-x, 100%),
+      var(--hoverpic-tran-y, 2.6em),
+      0px
+    )
+    rotateX(var(--hoverpic-rot-x, 10deg)) rotateY(var(--hoverpic-rot-y, 10deg))
+    rotateZ(var(--hoverpic-rot-z, 10deg)) skew(0deg);
+}
+.hoverpic3 {
+  transition: 700ms transform;
+  transform: translate3d(
+      var(--hoverpic-tran-x, 60%),
+      var(--hoverpic-tran-y, 5.6em),
+      0px
+    )
+    rotateX(var(--hoverpic-rot-x, 10deg)) rotateY(var(--hoverpic-rot-y, 10deg))
+    rotateZ(var(--hoverpic-rot-z, 10deg)) skew(0deg);
+}
+.horizontal_container {
+  mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #fff 20%,
+    #fff 80%,
+    transparent
+  );
+}
+.horizontal_scroll {
+  animation: horizontal1 20s linear infinite;
+  /* animation-delay: -5; */
+}
+.horizontal_scroll_2 {
+  animation: horizontal2 20s linear infinite;
+  animation-delay: -10s;
+}
+@keyframes horizontal1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes horizontal2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: #070f17;
