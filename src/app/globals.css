@@ -4,7 +4,7 @@
 
 @layer base {
   p {
-    @apply font-creato_medium my-4;
+    @apply my-4 font-creato_medium;
     color: #6f87a0eb;
   }
   h2 {
@@ -14,7 +14,7 @@
     background-clip: text;
   }
   h1 {
-    @apply font-creato_medium py-1 text-4xl font-bold sm:text-6xl;
+    @apply py-1 font-creato_medium text-4xl font-bold sm:text-6xl;
     background-image: linear-gradient(140deg, white, #bdd7f180);
     -webkit-text-fill-color: transparent;
     background-clip: text;

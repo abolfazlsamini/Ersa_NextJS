@@ -17,25 +17,24 @@ import hover_double_pic_2 from "../../public/home/hover_double_pic_2.webp";
 import key_icon from "../../public/home/key_icon.svg";
 import bubble_icon from "../../public/home/bubble_icon.svg";
 import cloud_icon from "../../public/home/cloud_icon.svg";
-import horizontal_icon_1 from "../../public/home/horizontal_icon_1.svg";
-import horizontal_icon_2 from "../../public/home/horizontal_icon_2.svg";
-import horizontal_icon_3 from "../../public/home/horizontal_icon_3.svg";
-import horizontal_icon_4 from "../../public/home/horizontal_icon_4.svg";
-import horizontal_icon_5 from "../../public/home/horizontal_icon_5.svg";
-import horizontal_icon_6 from "../../public/home/horizontal_icon_6.svg";
-import horizontal_icon_7 from "../../public/home/horizontal_icon_7.svg";
-import horizontal_icon_8 from "../../public/home/horizontal_icon_8.svg";
-import horizontal_icon_9 from "../../public/home/horizontal_icon_9.svg";
-import horizontal_icon_10 from "../../public/home/horizontal_icon_10.svg";
-import amazon_icon from "../../public/home/amazon_icon.svg";
-import small_cards_1 from "../../public/home/small_cards_1.svg";
-import small_cards_2 from "../../public/home/small_cards_2.svg";
-import small_cards_3 from "../../public/home/small_cards_3.svg";
-import small_cards_4 from "../../public/home/small_cards_4.svg";
-import small_cards_5 from "../../public/home/small_cards_5.svg";
-import small_cards_6 from "../../public/home/small_cards_6.svg";
-import small_cards_7 from "../../public/home/small_cards_7.svg";
-import small_cards_8 from "../../public/home/small_cards_8.svg";
+import horizontal_icon_1 from "../../public/home/horizontal_icon_1.png";
+import horizontal_icon_2 from "../../public/home/horizontal_icon_2.png";
+import horizontal_icon_3 from "../../public/home/horizontal_icon_3.png";
+import horizontal_icon_4 from "../../public/home/horizontal_icon_4.png";
+import horizontal_icon_5 from "../../public/home/horizontal_icon_5.png";
+import horizontal_icon_6 from "../../public/home/horizontal_icon_6.png";
+import horizontal_icon_7 from "../../public/home/horizontal_icon_3.png";
+import horizontal_icon_8 from "../../public/home/horizontal_icon_4.png";
+import horizontal_icon_9 from "../../public/home/horizontal_icon_5.png";
+import horizontal_icon_10 from "../../public/home/horizontal_icon_6.png";
+import small_cards_1 from "../../public/home/small_cards_1.png";
+import small_cards_2 from "../../public/home/small_cards_2.png";
+import small_cards_3 from "../../public/home/small_cards_3.png";
+import small_cards_4 from "../../public/home/small_cards_4.png";
+import small_cards_5 from "../../public/home/small_cards_5.png";
+import small_cards_6 from "../../public/home/small_cards_6.png";
+import small_cards_7 from "../../public/home/small_cards_7.png";
+import small_cards_8 from "../../public/home/small_cards_8.png";
 
 import avatar_1 from "../../public/home/avatar_1.webp";
 export default function Home() {
@@ -774,7 +773,7 @@ export default function Home() {
 
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff0000dd" }}
+            style={{ "--glow-color": "#ffde00" }}
           ></div>
         </div>
       </div>
@@ -992,7 +991,7 @@ export default function Home() {
           </a>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#03d8ff" }}
           ></div>
         </div>
       </section>
@@ -1031,7 +1030,7 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#ffde00" }}
           ></div>
         </div>
       </section>
@@ -1071,7 +1070,7 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#6fffdb" }}
           ></div>
         </div>
       </section>
@@ -1111,7 +1110,7 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#03d8ff" }}
           ></div>
         </div>
       </section>
@@ -1150,7 +1149,7 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#9eff6f" }}
           ></div>
         </div>
       </section>
@@ -1169,7 +1168,7 @@ export default function Home() {
               <p>
                 “Lorem venenatis purus facilisi nibh lacinia dictum odio
                 sit.asdasd Adipiscing volutpat elementum cursus et quam lectus
-                diam. Nunc felis.”
+                diam. Nunc felis.”5
               </p>
               <div className="flex">
                 <Image
@@ -1189,7 +1188,7 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#ff6ff7" }}
           ></div>
         </div>
       </section>
@@ -1228,7 +1227,7 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#726fff" }}
           ></div>
         </div>
       </section>
@@ -1431,7 +1430,7 @@ export default function Home() {
   const Small_card_1 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1450,11 +1449,11 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#ff0000" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          YouTube
         </h2>
       </div>
     );
@@ -1462,7 +1461,7 @@ export default function Home() {
   const Small_card_2 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1485,7 +1484,7 @@ export default function Home() {
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          Instagram
         </h2>
       </div>
     );
@@ -1493,7 +1492,7 @@ export default function Home() {
   const Small_card_3 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1512,11 +1511,11 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#27a4e6" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          Telegram
         </h2>
       </div>
     );
@@ -1524,7 +1523,7 @@ export default function Home() {
   const Small_card_4 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1543,11 +1542,11 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#8f46fc" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          Twitch
         </h2>
       </div>
     );
@@ -1555,7 +1554,7 @@ export default function Home() {
   const Small_card_5 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1574,11 +1573,11 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#ffffff" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          X
         </h2>
       </div>
     );
@@ -1586,7 +1585,7 @@ export default function Home() {
   const Small_card_6 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1605,11 +1604,11 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#0865fe" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          FaceBook
         </h2>
       </div>
     );
@@ -1617,7 +1616,7 @@ export default function Home() {
   const Small_card_7 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1636,11 +1635,11 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#0275b4" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          LinkedIn
         </h2>
       </div>
     );
@@ -1648,7 +1647,7 @@ export default function Home() {
   const Small_card_8 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `5rem`);
+      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1667,18 +1666,18 @@ export default function Home() {
           <div
             className="glow-overlay"
             ref={overlay_ref}
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#ffffff" }}
           ></div>
         </div>
         <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
-          Amazon
+          Github
         </h2>
       </div>
     );
   };
   const FullPlan = () => {
     return (
-      <section className="mx-4">
+      <section className="px-6">
         <div className="flex w-full flex-col items-center rounded-2xl border-2 border-white/5 bg-[#09121de5] px-4">
           <div className="mx-auto text-center">
             <div className="m-2 items-center sm:m-0 sm:w-full">
@@ -1732,7 +1731,7 @@ export default function Home() {
             <p className="py-5 text-sm">FOLLOW OUR SOCIAL MEDIA</p>
             <Horizontal_scrol />
           </div>
-          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20">
+          <div className="mx-auto mt-20 flex flex-col items-center px-10 text-center sm:px-20">
             <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
               Features
             </div>
@@ -1759,11 +1758,11 @@ export default function Home() {
           <Hoverpic_sec />
         </div>
         <section>
-          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20">
+          <div className="mx-auto mt-20 flex flex-col items-center px-10 text-center sm:px-20">
             <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
               Pricing
             </div>
-            <h1 className="mb-20 mt-5 text-center text-3xl sm:text-5xl">
+            <h1 className="mb-5 mt-5 text-center text-3xl sm:text-5xl">
               Get to know the services and features of Onigama
             </h1>
           </div>
@@ -1795,14 +1794,14 @@ export default function Home() {
             Follow us on social media to stay updated with the latest news
           </h1>
           <div className="my-20 w-full max-w-[1200px]">
-            <div className="flex w-full flex-row md:flex-col">
-              <div className="mx-auto mt-10 flex w-full flex-col justify-between px-10 md:flex-row">
+            <div className="flex w-full flex-row lg:flex-col">
+              <div className="mx-auto mt-10 flex w-full flex-col justify-between px-10 lg:flex-row">
                 <Small_card_1 />
                 <Small_card_2 />
                 <Small_card_3 />
                 <Small_card_4 />
               </div>
-              <div className="mx-auto mt-10 flex w-full flex-col justify-between px-10 md:flex-row">
+              <div className="mx-auto mt-10 flex w-full flex-col justify-between px-10 lg:flex-row">
                 <Small_card_5 />
                 <Small_card_6 />
                 <Small_card_7 />
@@ -1812,7 +1811,7 @@ export default function Home() {
           </div>
         </div>
         <section>
-          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20">
+          <div className="mx-auto mt-16 flex flex-col items-center px-10 text-center sm:px-20">
             <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
               Pricing
             </div>
