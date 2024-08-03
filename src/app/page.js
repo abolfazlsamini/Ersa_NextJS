@@ -349,7 +349,7 @@ export default function Home() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#ffde00" }}
           ></div>
         </div>
       </div>
@@ -384,7 +384,7 @@ export default function Home() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#03d8ff" }}
           ></div>
         </div>
       </div>
@@ -460,7 +460,7 @@ export default function Home() {
 
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff0000dd" }}
+            style={{ "--glow-color": "#ff6ff7" }}
           ></div>
         </div>
       </div>
@@ -495,7 +495,7 @@ export default function Home() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#7c3aed" }}
+            style={{ "--glow-color": "#6fffdb" }}
           ></div>
         </div>
       </div>
@@ -532,7 +532,7 @@ export default function Home() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#9eff6f" }}
           ></div>
         </div>
       </div>
@@ -609,7 +609,7 @@ export default function Home() {
 
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff0000dd" }}
+            style={{ "--glow-color": "#726fff" }}
           ></div>
         </div>
       </div>
