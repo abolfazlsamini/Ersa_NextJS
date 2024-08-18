@@ -1712,9 +1712,9 @@ export default function Home() {
           <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-1/2">
             <h1>Make Your Money Do Teh Most</h1>
             <p>
-              Investing today is not just about securing your future; it's about
-              creating opportunities for growth and prosperity that you and your
-              loved ones can enjoy for years to come
+              Investing today is not just about securing your future; it&apos;s
+              about creating opportunities for growth and prosperity that you
+              and your loved ones can enjoy for years to come
             </p>
             <a className="unGlow_btn my-5" href="#">
               Get Started
