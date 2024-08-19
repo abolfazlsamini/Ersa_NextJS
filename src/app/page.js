@@ -951,7 +951,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <a className="unGlow_btn absolute bottom-10 left-20" href="#">
+          <a
+            className="unGlow_btn absolute bottom-10 left-7 lg:left-20"
+            href="#"
+          >
             Get Started
           </a>
           <div
@@ -986,7 +989,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <a className="unGlow_btn absolute bottom-10 left-20" href="#">
+          <a
+            className="unGlow_btn absolute bottom-10 left-7 lg:left-20"
+            href="#"
+          >
             Get Started
           </a>
           <div
