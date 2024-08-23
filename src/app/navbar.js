@@ -58,13 +58,13 @@ export default function Navbar() {
               Contacts
             </Link>
             <Link
-              href=""
+              href="/kengoa"
               onClick={() => {
                 setToggleMenu(false);
               }}
               className="cursor-pointer hover:text-white"
             >
-              Shop
+              Kengoa
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -156,13 +156,13 @@ export default function Navbar() {
                   Contacts
                 </Link>
                 <Link
-                  href=""
+                  href="/kengoa"
                   onClick={() => {
                     setToggleMenu(false);
                   }}
                   className="my-3 block cursor-pointer hover:text-white"
                 >
-                  Shop
+                  Kengoa
                 </Link>
                 <Link
                   href=""
