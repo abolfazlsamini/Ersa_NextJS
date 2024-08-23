@@ -45,7 +45,7 @@ export default function Pricing() {
   const Price_card_1 = () => {
     return (
       <section className="sm:w-1/2">
-        <div className="glow-capture relative m-5 w-11/12 sm:m-0 sm:w-full">
+        <div className="glow-capture relative mx-auto my-5 w-11/12 sm:m-0 sm:w-full">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
               <div>
@@ -83,7 +83,7 @@ export default function Pricing() {
   const Price_card_2 = () => {
     return (
       <section className="sm:w-1/2">
-        <div className="glow-capture relative m-5 w-11/12 sm:m-0 sm:w-full">
+        <div className="glow-capture relative mx-auto my-5 w-11/12 sm:m-0 sm:w-full">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
               <div>
@@ -162,91 +162,107 @@ export default function Pricing() {
         const height = window.innerWidth;
         if (width < 768) return;
         `"""*********** hover pic section **************"""`;
-        hover_pic_1_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_1_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_1_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_1_ref.current)
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+        if (hover_pic_1_ref.current)
+          hover_pic_1_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+        if (hover_pic_1_ref.current)
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
         `"""*********** hover pic blur section **************"""`;
-        hover_pic_1_blur_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_1_blur_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_1_blur_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_1_blur_ref.current)
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+        if (hover_pic_1_blur_ref.current)
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+        if (hover_pic_1_blur_ref.current)
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
         `"""*********** hover pic 2 section **************"""`;
-        hover_pic_2_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_2_ref.current)
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+        if (hover_pic_2_ref.current)
+          hover_pic_2_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+        if (hover_pic_2_ref.current)
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
         `"""*********** hover pic blur 2 section **************"""`;
-        hover_pic_2_blur_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_2_blur_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_2_blur_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_2_blur_ref.current)
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+        if (hover_pic_2_blur_ref.current)
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+        if (hover_pic_2_blur_ref.current)
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
       });
 
       window.addEventListener("scroll", scrolly);
     }, []);
 
     function scrolly() {
-      hover_pic_1_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_1_blur_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_2_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_2_blur_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
+      if (hover_pic_1_ref.current)
+        hover_pic_1_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_1_blur_ref.current)
+        hover_pic_1_blur_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_ref.current)
+        hover_pic_2_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_blur_ref.current)
+        hover_pic_2_blur_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
     }
     return (
       <div className="m-5">
@@ -549,8 +565,8 @@ export default function Pricing() {
     );
   };
   return (
-    <section className="mt-32">
-      <section>
+    <section className="mt-32 overflow-hidden py-10">
+      {/* <section>
         <div className="mx-auto mt-16 flex flex-col items-center px-10 text-center sm:px-20">
           <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
             Pricing
@@ -587,7 +603,7 @@ export default function Pricing() {
           <FullPlan />
         </div>
         <Card_3 />
-      </div>
+      </div> */}
     </section>
   );
 }

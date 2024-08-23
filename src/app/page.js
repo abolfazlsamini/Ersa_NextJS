@@ -251,39 +251,44 @@ export default function Home() {
         const y = event.pageY;
         const width = window.innerWidth;
         const height = window.innerWidth;
-        if (x < width / 2) {
-          //mouse on left side of screen
-          if (width / (x + 1) / 5 < 6)
+        if (mainPicRef.current) {
+          if (x < width / 2) {
+            //mouse on left side of screen
+            if (width / (x + 1) / 5 < 6)
+              mainPicRef.current.style.setProperty(
+                "--mainPic-y",
+                `${-width / (x + 1) / 6}deg`,
+              );
+            else
+              mainPicRef.current.style.setProperty("--mainPic-y", `${-1}deg`);
+          } else {
             mainPicRef.current.style.setProperty(
               "--mainPic-y",
-              `${-width / (x + 1) / 6}deg`,
+              `${(x / width) * 5}deg`,
             );
-          else mainPicRef.current.style.setProperty("--mainPic-y", `${-1}deg`);
-        } else {
-          mainPicRef.current.style.setProperty(
-            "--mainPic-y",
-            `${(x / width) * 5}deg`,
-          );
+          }
         }
       });
 
       window.addEventListener("scroll", scrolly);
     }, []);
     function scrolly() {
-      mainPicRef.current.style.setProperty(
-        "--mainPic-trans-y",
-        `${visibilityPercent(mainPicRef) * -100}px`,
-      );
-      if (visibilityPercent(mainPicRef) > 0.5) {
+      if (mainPicRef.current) {
         mainPicRef.current.style.setProperty(
-          "--mainPic-rot-y",
-          `${visibilityPercent(mainPicRef) * -6}deg`,
+          "--mainPic-trans-y",
+          `${visibilityPercent(mainPicRef) * -100}px`,
         );
-      } else {
-        mainPicRef.current.style.setProperty(
-          "--mainPic-rot-y",
-          `${visibilityPercent(mainPicRef) * 6}deg`,
-        );
+        if (visibilityPercent(mainPicRef) > 0.5) {
+          mainPicRef.current.style.setProperty(
+            "--mainPic-rot-y",
+            `${visibilityPercent(mainPicRef) * -6}deg`,
+          );
+        } else {
+          mainPicRef.current.style.setProperty(
+            "--mainPic-rot-y",
+            `${visibilityPercent(mainPicRef) * 6}deg`,
+          );
+        }
       }
     }
     return (
@@ -336,7 +341,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h2 className="mb-3 text-4xl font-bold tracking-tighter">
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
                   Earn money and have fun by playing our Cryptocurrency games
                 </h2>
 
@@ -371,7 +376,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h2 className="mb-3 text-4xl font-bold tracking-tighter">
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
                   Trade in our Forex brokerage
                 </h2>
 
@@ -393,10 +398,11 @@ export default function Home() {
   const Card_2_1 = () => {
     const cardhoverPic_1 = useRef();
     function scrolly() {
-      cardhoverPic_1.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${3 - visibilityPercent(cardhoverPic_1) * 6}em`,
-      );
+      if (cardhoverPic_1.current)
+        cardhoverPic_1.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${3 - visibilityPercent(cardhoverPic_1) * 6}em`,
+        );
     }
     useEffect(() => {
       window.addEventListener("mousemove", (event) => {
@@ -406,22 +412,24 @@ export default function Home() {
         const height = window.innerWidth;
         if (width < 768) return;
         `"""*********** card 1 section **************"""`;
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 10 + 5}deg`,
-        );
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-tran-x",
-          `${30 - (x / width) * 6}%`,
-        );
+        if (cardhoverPic_1.current) {
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 10 + 5}deg`,
+          );
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-tran-x",
+            `${30 - (x / width) * 6}%`,
+          );
+        }
       });
       window.addEventListener("scroll", scrolly);
     }, []);
@@ -482,7 +490,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h2 className="mb-3 text-4xl font-bold tracking-tighter">
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
                   Investment in gold, stone, and diamond mining
                 </h2>
 
@@ -517,7 +525,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h2 className="mb-3 text-4xl font-bold tracking-tighter">
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
                   Launch Our Cryptocurrency Exchange Platform
                 </h2>
 
@@ -541,10 +549,11 @@ export default function Home() {
   const Card_2_2 = () => {
     const cardhoverPic_1 = useRef();
     function scrolly() {
-      cardhoverPic_1.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${3 - visibilityPercent(cardhoverPic_1) * 6}em`,
-      );
+      if (cardhoverPic_1.current)
+        cardhoverPic_1.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${3 - visibilityPercent(cardhoverPic_1) * 6}em`,
+        );
     }
     useEffect(() => {
       window.addEventListener("mousemove", (event) => {
@@ -554,22 +563,24 @@ export default function Home() {
         const height = window.innerWidth;
         if (width < 768) return;
         `"""*********** card 1 section **************"""`;
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 10 + 5}deg`,
-        );
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        cardhoverPic_1.current.style.setProperty(
-          "--cardhoverpic-tran-x",
-          `${30 - (x / width) * 6}%`,
-        );
+        if (cardhoverPic_1.current) {
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 10 + 5}deg`,
+          );
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          cardhoverPic_1.current.style.setProperty(
+            "--cardhoverpic-tran-x",
+            `${30 - (x / width) * 6}%`,
+          );
+        }
       });
       window.addEventListener("scroll", scrolly);
     }, []);
@@ -629,91 +640,103 @@ export default function Home() {
         const height = window.innerWidth;
         if (width < 768) return;
         `"""*********** hover pic section **************"""`;
-        hover_pic_1_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_1_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_1_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_1_ref.current) {
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_1_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
         `"""*********** hover pic blur section **************"""`;
-        hover_pic_1_blur_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_1_blur_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_1_blur_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_1_blur_ref.current) {
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
         `"""*********** hover pic 2 section **************"""`;
-        hover_pic_2_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_2_ref.current) {
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_2_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
         `"""*********** hover pic blur 2 section **************"""`;
-        hover_pic_2_blur_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--cardhoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_2_blur_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--cardhoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_2_blur_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--cardhoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_2_blur_ref.current) {
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
       });
 
       window.addEventListener("scroll", scrolly);
     }, []);
 
     function scrolly() {
-      hover_pic_1_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_1_blur_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_2_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_2_blur_ref.current.style.setProperty(
-        "--cardhoverpic-tran-y",
-        `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
+      if (hover_pic_1_ref.current)
+        hover_pic_1_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_1_blur_ref.current)
+        hover_pic_1_blur_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_ref.current)
+        hover_pic_2_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_blur_ref.current)
+        hover_pic_2_blur_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
     }
     return (
       <div className="m-5">
@@ -792,69 +815,78 @@ export default function Home() {
         const height = window.innerWidth;
         if (width < 768) return;
         `"""*********** hover pic section **************"""`;
-        hover_pic_1_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--hoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_1_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--hoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_1_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--hoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--hoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--hoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_2_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--hoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
-        hover_pic_3_ref.current.style.setProperty(
-          // 15 to 5 deg
-          "--hoverpic-rot-x",
-          `${(y / height) * 5 + 10}deg`,
-        );
-        hover_pic_3_ref.current.style.setProperty(
-          // -25 to -15 deg
-          "--hoverpic-rot-y",
-          `${-25 + (x / width) * 10}deg`,
-        );
-        hover_pic_3_ref.current.style.setProperty(
-          // 15 to 10 deg
-          "--hoverpic-rot-z",
-          `${15 - (x / width) * 5}deg`,
-        );
+        if (hover_pic_1_ref.current) {
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--hoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_1_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--hoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--hoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
+        if (hover_pic_2_ref.current) {
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--hoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_2_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--hoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--hoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
+        if (hover_pic_3_ref.current) {
+          hover_pic_3_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--hoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_3_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--hoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_3_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--hoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
       });
 
       window.addEventListener("scroll", scrolly);
     }, []);
 
     function scrolly() {
-      hover_pic_1_ref.current.style.setProperty(
-        "--hoverpic-tran-y",
-        `${10 - visibilityPercent(hover_pic_1_ref) * 20}em`,
-      );
-      hover_pic_2_ref.current.style.setProperty(
-        "--hoverpic-tran-y",
-        `${10 - visibilityPercent(hover_pic_2_ref) * 15}em`,
-      );
-      hover_pic_3_ref.current.style.setProperty(
-        "--hoverpic-tran-y",
-        `${10 - visibilityPercent(hover_pic_3_ref) * 20}em`,
-      );
+      if (hover_pic_1_ref.current)
+        hover_pic_1_ref.current.style.setProperty(
+          "--hoverpic-tran-y",
+          `${10 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_ref.current)
+        hover_pic_2_ref.current.style.setProperty(
+          "--hoverpic-tran-y",
+          `${10 - visibilityPercent(hover_pic_2_ref) * 15}em`,
+        );
+      if (hover_pic_3_ref.current)
+        hover_pic_3_ref.current.style.setProperty(
+          "--hoverpic-tran-y",
+          `${10 - visibilityPercent(hover_pic_3_ref) * 20}em`,
+        );
     }
     return (
       <section>
@@ -930,7 +962,7 @@ export default function Home() {
   const Price_card_1 = () => {
     return (
       <section className="sm:w-1/2">
-        <div className="glow-capture relative m-5 w-11/12 sm:m-0 sm:w-full">
+        <div className="glow-capture relative mx-auto my-5 w-11/12 sm:m-0 sm:w-full">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
               <div>
@@ -968,7 +1000,7 @@ export default function Home() {
   const Price_card_2 = () => {
     return (
       <section className="sm:w-1/2">
-        <div className="glow-capture relative m-5 w-11/12 sm:m-0 sm:w-full">
+        <div className="glow-capture relative mx-auto my-5 w-11/12 sm:m-0 sm:w-full">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
               <div>
@@ -1006,7 +1038,8 @@ export default function Home() {
   const Avatar_card_1 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `20rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `20rem`);
     }, []);
     return (
       <section className="w-full md:max-w-[400px]">
@@ -1046,7 +1079,8 @@ export default function Home() {
   const Avatar_card_2 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `20rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `20rem`);
     }, []);
     return (
       <section className="w-full md:max-w-[400px]">
@@ -1085,7 +1119,8 @@ export default function Home() {
   const Avatar_card_3 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `20rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `20rem`);
     }, []);
     return (
       <section className="w-full md:max-w-[400px]">
@@ -1125,7 +1160,8 @@ export default function Home() {
   const Avatar_card_4 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `20rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `20rem`);
     }, []);
     return (
       <section className="w-full md:max-w-[400px]">
@@ -1164,7 +1200,8 @@ export default function Home() {
   const Avatar_card_5 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `20rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `20rem`);
     }, []);
     return (
       <section className="w-full md:max-w-[400px]">
@@ -1203,7 +1240,8 @@ export default function Home() {
   const Avatar_card_6 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `20rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `20rem`);
     }, []);
     return (
       <section className="w-full md:max-w-[400px]">
@@ -1436,7 +1474,8 @@ export default function Home() {
   const Small_card_1 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1467,7 +1506,8 @@ export default function Home() {
   const Small_card_2 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1498,7 +1538,8 @@ export default function Home() {
   const Small_card_3 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1529,7 +1570,8 @@ export default function Home() {
   const Small_card_4 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1560,7 +1602,8 @@ export default function Home() {
   const Small_card_5 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1591,7 +1634,8 @@ export default function Home() {
   const Small_card_6 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1622,7 +1666,8 @@ export default function Home() {
   const Small_card_7 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1653,7 +1698,8 @@ export default function Home() {
   const Small_card_8 = () => {
     const overlay_ref = new useRef();
     useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `8rem`);
+      if (overlay_ref.current)
+        overlay_ref.current.style.setProperty("--glow-size", `8rem`);
     }, []);
     return (
       <div className="mx-auto text-center">
@@ -1715,7 +1761,7 @@ export default function Home() {
     <main>
       <section>
         <section>
-          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-1/2">
+          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-3/4 xl:w-1/2">
             <h1>Make Your Money Do Teh Most</h1>
             <p>
               Investing today is not just about securing your future; it&apos;s
@@ -1760,7 +1806,7 @@ export default function Home() {
           </div>
           <Card_2_2 />
         </div>
-        <div className="mx-auto max-w-[1200px]">
+        <div className="mx-auto max-w-[1200px] overflow-hidden">
           <Hoverpic_sec />
         </div>
         <section>
@@ -1801,13 +1847,13 @@ export default function Home() {
           </h1>
           <div className="my-20 w-full max-w-[1200px]">
             <div className="flex w-full flex-row lg:flex-col">
-              <div className="mx-auto mt-10 flex w-full flex-col justify-between px-10 lg:flex-row">
+              <div className="mx-auto mt-10 flex w-full flex-col justify-between sm:px-10 lg:flex-row">
                 <Small_card_1 />
                 <Small_card_2 />
                 <Small_card_3 />
                 <Small_card_4 />
               </div>
-              <div className="mx-auto mt-10 flex w-full flex-col justify-between px-10 lg:flex-row">
+              <div className="mx-auto mt-10 flex w-full flex-col justify-between sm:px-10 lg:flex-row">
                 <Small_card_5 />
                 <Small_card_6 />
                 <Small_card_7 />

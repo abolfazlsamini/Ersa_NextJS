@@ -10,6 +10,9 @@ export default {
     extend: {
       fontFamily: {
         creato_medium: "var(--font-creato_medium)",
+        neueplaktext_regular: "var(--font-neueplaktext_regular)",
+        t1korium: "var(--font-t1korium)",
+        zau: "var(--font-zau)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

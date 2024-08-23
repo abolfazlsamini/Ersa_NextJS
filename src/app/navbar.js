@@ -2,46 +2,90 @@
 import Image from "next/image";
 import logo from "../../public/nav_logo.svg";
 import cart_icon from "../../public/cart_icon.svg";
-import menu_icon from "../../public/menu_icon.svg";
+
 import { useState } from "react";
+import Link from "next/link";
+
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="fixed left-1/2 top-3 z-30 w-11/12 -translate-x-1/2 rounded-full border border-[#6f87a042] bg-[#09121de5] px-3 py-3">
-      <div className="relative w-full">
+    <nav className="fixed left-1/2 top-3 z-30 w-[99%] max-w-[1180px] -translate-x-1/2 rounded-full border border-[#6f87a042] bg-[#09121de5] px-3 py-3 md:w-11/12">
+      <div className="relative mx-auto w-11/12 md:w-full">
         <div className="flex items-center justify-between space-x-8 font-creato_medium text-[#6f87a0eb]">
           <div className="block lg:hidden">
-            <a href="/">
+            <Link href="/">
               <Image alt="" width={0} height={0} src={logo} />
-            </a>
+            </Link>
           </div>
           <div className="hidden items-center space-x-8 lg:flex">
-            <a href="/">
+            <Link href="/">
               <Image alt="" width={0} height={0} src={logo} />
-            </a>
-            <a href="" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link
+              href=""
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="cursor-pointer hover:text-white"
+            >
               Features
-            </a>
-            <a href="/pricing" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link
+              href="/pricing"
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="cursor-pointer hover:text-white"
+            >
               Pricing
-            </a>
-            <a href="" className="cursor-pointer hover:text-white">
-              Blog
-            </a>
-            <a href="" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link
+              href="/about_us"
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="cursor-pointer hover:text-white"
+            >
+              About Us
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="cursor-pointer hover:text-white"
+            >
               Contacts
-            </a>
-            <a href="" className="cursor-pointer hover:text-white">
+            </Link>
+            <Link
+              href=""
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="cursor-pointer hover:text-white"
+            >
               Shop
-            </a>
+            </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="" className="cursor-pointer hover:text-white">
+            <Link
+              href=""
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="hidden cursor-pointer hover:text-white sm:block"
+            >
               Log in
-            </a>
-            <a className="glow_btn px-5 py-2 font-creato_medium text-sm">
+            </Link>
+            <Link
+              href=""
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="glow_btn hidden px-5 py-2 font-creato_medium text-sm sm:block"
+            >
               Sign up
-            </a>
+            </Link>
             {/*       mobile     */}
             <div className="flex items-center lg:hidden">
               <div
@@ -71,40 +115,73 @@ export default function Navbar() {
               <div
                 className={
                   toggleMenu
-                    ? "absolute left-0 top-10 z-10 max-h-[20rem] w-full overflow-hidden rounded-lg border border-[#6f87a042] px-5 backdrop-blur-lg transition-all duration-300 sm:top-16"
-                    : "absolute left-0 top-10 z-10 max-h-0 w-full overflow-hidden rounded-lg border-[#6f87a042] px-5 backdrop-blur-lg transition-all duration-300 sm:top-16"
+                    ? "absolute left-0 top-14 z-20 max-h-[20rem] w-full overflow-hidden rounded-lg border border-[#6f87a042] bg-[#070f17cc] px-5 backdrop-blur-lg transition-all duration-300 sm:top-16"
+                    : "absolute left-0 top-14 z-20 max-h-0 w-full overflow-hidden rounded-lg border-[#6f87a042] bg-[#070f17cc] px-5 backdrop-blur-lg transition-all duration-300 sm:top-16"
                 }
               >
-                <a
+                <Link
                   href=""
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
                   className="my-3 block cursor-pointer hover:text-white"
                 >
                   Features
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/pricing"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
                   className="mt-3 block cursor-pointer hover:text-white"
                 >
                   Pricing
-                </a>
-                <a
-                  href=""
+                </Link>
+                <Link
+                  href="/about_us"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
                   className="mt-3 block cursor-pointer hover:text-white"
                 >
-                  Blog
-                </a>
-                <a
-                  href=""
+                  About Us
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
                   className="mt-3 block cursor-pointer hover:text-white"
                 >
                   Contacts
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
                   className="my-3 block cursor-pointer hover:text-white"
                 >
                   Shop
-                </a>
+                </Link>
+                <Link
+                  href=""
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                  className="my-3 block cursor-pointer hover:text-white"
+                >
+                  Login
+                </Link>
+                <Link
+                  href=""
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                  className="my-3 block cursor-pointer hover:text-white"
+                >
+                  Sign up
+                </Link>
               </div>
             </div>
             <div className="glow_btn relative px-4 py-2 font-creato_medium text-sm">
@@ -116,6 +193,14 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      <div
+        className={
+          toggleMenu ? "absolute left-0 top-0 z-10 h-[100vh] w-full" : "hidden"
+        }
+        onClick={() => {
+          setToggleMenu(false);
+        }}
+      ></div>
     </nav>
   );
 }
