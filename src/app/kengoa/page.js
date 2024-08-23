@@ -104,10 +104,10 @@ export default function Kengoa() {
                 </div>
                 <div className="font-neueplaktext_regular my-2 text-xl">
                   Embark on a poignant single-player story shaped by actor
-                  Abubakar Salim's own experience with grief, discovering how
-                  love gives us the courage to press on after devastating loss.
-                  As kengoa, you must face your own emotions to become a worthy
-                  Nganga: a spiritual healer.
+                  Abubakar Salim`&apos;s own experience with grief, discovering
+                  how love gives us the courage to press on after devastating
+                  loss. As kengoa, you must face your own emotions to become a
+                  worthy Nganga: a spiritual healer.
                 </div>
               </div>
             </div>
@@ -132,10 +132,10 @@ export default function Kengoa() {
                 </div>
                 <div className="font-neueplaktext_regular my-2 text-xl">
                   Embark on a poignant single-player story shaped by actor
-                  Abubakar Salim's own experience with grief, discovering how
-                  love gives us the courage to press on after devastating loss.
-                  As kengoa, you must face your own emotions to become a worthy
-                  Nganga: a spiritual healer.
+                  Abubakar Salim`&apos;s own experience with grief, discovering
+                  how love gives us the courage to press on after devastating
+                  loss. As kengoa, you must face your own emotions to become a
+                  worthy Nganga: a spiritual healer.
                 </div>
               </div>
             </div>
@@ -160,10 +160,10 @@ export default function Kengoa() {
                 </div>
                 <div className="font-neueplaktext_regular my-2 text-xl">
                   Embark on a poignant single-player story shaped by actor
-                  Abubakar Salim's own experience with grief, discovering how
-                  love gives us the courage to press on after devastating loss.
-                  As kengoa, you must face your own emotions to become a worthy
-                  Nganga: a spiritual healer.
+                  Abubakar Salim`&apos;s own experience with grief, discovering
+                  how love gives us the courage to press on after devastating
+                  loss. As kengoa, you must face your own emotions to become a
+                  worthy Nganga: a spiritual healer.
                 </div>
               </div>
             </div>
