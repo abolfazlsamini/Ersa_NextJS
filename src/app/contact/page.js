@@ -112,11 +112,11 @@ export default function Contact() {
   return (
     <section className="mt-32">
       <section>
-        <div className="mx-auto mt-16 flex flex-col items-center px-10 text-center sm:px-20">
+        <div className="mx-auto mb-12 flex max-w-[1200px] flex-col items-center px-10 text-center sm:px-20">
           <div className="rounded-full bg-[#eb728126] px-3 py-1 text-sm uppercase text-[#eb7281]">
             Contact
           </div>
-          <h1 className="mb-10 mt-5 text-center text-5xl sm:text-7xl">
+          <h1 className="mb-10 mt-5 text-center text-5xl sm:text-7xl md:w-1/3 2xl:w-1/2">
             Contact our support team for assistance
           </h1>
           <p className="mx-auto md:w-1/2">
