@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import home_main from "../../public/home/home_main.png";
-import float_pic_1 from "../../public/home/float_pic_1.png";
-import float_pic_2 from "../../public/home/float_pic_2.png";
+import float_pic_1 from "../../public/home/float_pic_1.webp";
+import float_pic_2 from "../../public/home/float_pic_2.webp";
 import card_pic_1 from "../../public/home/card_pic_1.webp";
 import card_pic_2 from "../../public/home/card_pic_2.webp";
 import card_pic_3 from "../../public/home/card_pic_3.webp";
@@ -292,9 +292,9 @@ export default function Home() {
       }
     }
     return (
-      <section className="overflow-hidden p-20">
+      <section className="overflow-hidden p-8 pt-14 md:p-20">
         <div className="glow-capture mainPic relative mx-auto" ref={mainPicRef}>
-          <div className="glow glow group absolute mx-auto flex h-full w-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-zinc-900/50 p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.03] glow:ring-1 glow:ring-glow md:flex-row md:items-start md:justify-between"></div>
+          <div className="glow glow group absolute mx-auto flex h-full w-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-zinc-900/50 p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.10] glow:ring-1 glow:ring-glow md:flex-row md:items-start md:justify-between"></div>
           <Image
             src={home_main}
             alt=""
@@ -303,7 +303,7 @@ export default function Home() {
             className="rounded-2xl"
           />
           <div
-            className="glow-overlay rounded-2xl"
+            className="glow-overlay hidden rounded-2xl sm:block"
             style={{ "--glow-color": "#6472f3" }}
           ></div>
         </div>
@@ -745,12 +745,13 @@ export default function Home() {
             <div className="relative z-10 mx-auto flex justify-center text-center sm:w-1/2">
               <div>
                 <h2 className="mb-3 font-bold tracking-tighter glow:text-glow/[.5]">
-                  Get started with our SaaS platform
+                  Join the grand Onigama project
                 </h2>
 
                 <p>
-                  Vestibulum mattis ornare sed erat arcu. Id lorem a volutpat
-                  enim nunc. Eget sem lacus.
+                  Join one of the biggest money-making projects. Onigama offers
+                  comprehensive management and planning at every moment. Join
+                  Onigama and feel the difference
                 </p>
               </div>
             </div>
@@ -791,7 +792,7 @@ export default function Home() {
             className="unGlow_btn absolute left-1/2 top-[70%] -translate-x-1/2"
             href="#"
           >
-            More&nbsp;Features
+            Get&nbsp;Started
           </a>
 
           <div
@@ -890,7 +891,7 @@ export default function Home() {
     }
     return (
       <section>
-        <div className="flex flex-col items-center py-20 sm:flex-row">
+        <div className="flex flex-col items-center py-32 sm:flex-row">
           <div className="min-h-[60vh] sm:min-h-[80vh] sm:w-1/2">
             <Image
               src={hover_pic_1}
@@ -1289,7 +1290,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1298,7 +1299,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1307,7 +1308,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1316,7 +1317,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1325,7 +1326,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1334,7 +1335,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1343,7 +1344,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1352,7 +1353,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1361,7 +1362,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1370,7 +1371,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
           </div>
@@ -1381,7 +1382,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1390,7 +1391,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1399,7 +1400,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1408,7 +1409,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1417,7 +1418,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1426,7 +1427,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1435,7 +1436,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1444,7 +1445,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1453,7 +1454,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
             <span className="inline-flex">
@@ -1462,7 +1463,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 alt=""
-                className="mr-7 size-[5.9em]"
+                className="mr-7 w-[9em]"
               />
             </span>
           </div>
@@ -1761,8 +1762,8 @@ export default function Home() {
     <main>
       <section>
         <section>
-          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-3/4 xl:w-1/2">
-            <h1>Make Your Money Do Teh Most</h1>
+          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-3/4 xl:my-36 2xl:w-1/2">
+            <h1>Make Your Money Do The Most</h1>
             <p>
               Investing today is not just about securing your future; it&apos;s
               about creating opportunities for growth and prosperity that you
@@ -1784,10 +1785,10 @@ export default function Home() {
             <Horizontal_scrol />
           </div>
           <div className="mx-auto mt-20 flex flex-col items-center px-10 text-center sm:px-20">
-            <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
+            <div className="rounded-full bg-[#5566ff26] px-3 py-1 text-sm uppercase text-[#56f]">
               Features
             </div>
-            <h1 className="mb-20 mt-5 text-center text-3xl sm:text-5xl lg:w-1/2">
+            <h1 className="mb-20 mt-5 text-center text-3xl sm:text-6xl lg:w-1/2 2xl:w-1/3">
               Get to know the services and features of Onigama
             </h1>
           </div>
@@ -1809,17 +1810,17 @@ export default function Home() {
         <div className="mx-auto max-w-[1200px] overflow-hidden">
           <Hoverpic_sec />
         </div>
-        <section>
-          <div className="mx-auto mt-20 flex flex-col items-center px-10 text-center sm:px-20">
-            <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
-              Pricing
-            </div>
-            <h1 className="mb-5 mt-5 text-center text-3xl sm:text-5xl">
-              Get to know the services and features of Onigama
-            </h1>
-          </div>
-        </section>
         <div className="mask_bg py-20">
+          <section>
+            <div className="mx-auto mb-20 flex flex-col items-center px-10 text-center sm:px-20">
+              <div className="rounded-full bg-[#5566ff26] px-3 py-1 text-sm uppercase text-[#56f]">
+                Pricing
+              </div>
+              <h1 className="mb-5 mt-5 text-center text-3xl sm:text-5xl">
+                Get to know the services and features of Onigama
+              </h1>
+            </div>
+          </section>
           <div className="mx-auto max-w-[1200px] px-2">
             <div className="flex flex-col md:flex-row">
               <div className="flex flex-col">
@@ -1839,7 +1840,7 @@ export default function Home() {
         </div>
 
         <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20">
-          <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
+          <div className="rounded-full bg-[#5566ff26] px-3 py-1 text-sm uppercase text-[#56f]">
             Integrations
           </div>
           <h1 className="mb-10 mt-5 text-center text-3xl sm:text-5xl">
@@ -1864,7 +1865,7 @@ export default function Home() {
         </div>
         <section>
           <div className="mx-auto mt-16 flex flex-col items-center px-10 text-center sm:px-20">
-            <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
+            <div className="rounded-full bg-[#5566ff26] px-3 py-1 text-sm uppercase text-[#56f]">
               Pricing
             </div>
             <h1 className="mb-10 mt-5 text-center text-3xl sm:text-5xl">
@@ -1872,7 +1873,7 @@ export default function Home() {
             </h1>
           </div>
         </section>
-        <div className="mx-auto max-w-[1200px] pb-52">
+        <div className="mx-auto max-w-[1200px] pb-16">
           <div className="flex flex-col sm:flex-row">
             <Price_card_1 />
             <Price_card_2 />

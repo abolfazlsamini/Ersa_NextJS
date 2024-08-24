@@ -15,7 +15,7 @@
     -webkit-background-clip: text;
   }
   h1 {
-    @apply py-1 font-creato_medium text-4xl font-bold sm:text-6xl;
+    @apply py-1 font-creato_medium text-4xl font-bold sm:text-6xl lg:text-7xl;
     background-image: linear-gradient(140deg, white, #bdd7f180);
     -webkit-text-fill-color: transparent;
     background-clip: text;

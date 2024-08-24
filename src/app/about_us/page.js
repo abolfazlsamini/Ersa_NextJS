@@ -482,7 +482,7 @@ export default function About_us() {
     <main className="mt-20 overflow-hidden py-10">
       <section className="mx-auto max-w-[1200px]">
         <div className="mx-auto mt-16 flex flex-col items-center px-10 text-center sm:px-20">
-          <div className="rounded-full bg-[#5566ff26] px-2 py-1 text-sm uppercase text-[#56f]">
+          <div className="rounded-full bg-[#5566ff26] px-3 py-1 text-sm uppercase text-[#56f]">
             About Onigama
           </div>
           <h1 className="mb-10 mt-5 text-center">
