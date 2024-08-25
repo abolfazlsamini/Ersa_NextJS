@@ -11,9 +11,11 @@ import pic_8 from "../../../public/about_us/pic_8.jpg";
 import pic_9 from "../../../public/about_us/pic_9.jpg";
 import pic_10 from "../../../public/about_us/pic_10.jpg";
 import greater_icon from "../../../public/greater_icon.svg";
+import hover_double_pic_1 from "../../../public/home/hover_double_pic_1.webp";
+import hover_double_pic_2 from "../../../public/home/hover_double_pic_2.webp";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 export default function About_us() {
   useEffect(() => {
@@ -36,7 +38,21 @@ export default function About_us() {
       });
     });
   }, []);
-
+  let visibilityPercent = (mainPicRef) => {
+    const windowHeight = window.visualViewport.height;
+    if (windowHeight - mainPicRef.current.getBoundingClientRect().top < 0) {
+      return 0;
+    }
+    if (
+      windowHeight - mainPicRef.current.getBoundingClientRect().top >
+      2 * windowHeight
+    )
+      return 0;
+    return (
+      (windowHeight - mainPicRef.current.getBoundingClientRect().top) /
+      (windowHeight * 2)
+    );
+  };
   const Card_1 = () => {
     return (
       <div className="mb-4 block self-stretch md:w-1/2">
@@ -50,7 +66,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -75,7 +91,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#a03e27" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -94,7 +110,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -119,7 +135,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#3c6e80" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -138,7 +154,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -163,7 +179,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#83572c" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -182,7 +198,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -207,7 +223,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#134d76" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -226,7 +242,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -251,7 +267,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#6bffe9" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -270,7 +286,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -295,7 +311,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#bea799" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -314,7 +330,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -339,7 +355,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#bea799" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -358,7 +374,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -383,7 +399,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#bea799" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -402,7 +418,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -427,7 +443,7 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#bea799" }}
+            style={{ "--glow-color": "#5566ff" }}
           ></div>
         </div>
       </div>
@@ -446,7 +462,7 @@ export default function About_us() {
                   width={0}
                   height={0}
                   alt=""
-                  className="mb-10 rounded-lg glow:border-glow glow:bg-glow/[.15] glow:ring-2 glow:ring-glow"
+                  className="mb-10 rounded-lg border border-white/5 bg-glow/[.15] ring-2 ring-glow transition-all hover:border-[#5566ff]"
                 />
               </div>
               <div>
@@ -472,7 +488,184 @@ export default function About_us() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#bea799" }}
+            style={{ "--glow-color": "#5566ff" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_3_bottum = () => {
+    console.count();
+    const hover_pic_1_ref = useRef();
+    const hover_pic_1_blur_ref = useRef();
+    const hover_pic_2_ref = useRef();
+    const hover_pic_2_blur_ref = useRef();
+    useEffect(() => {
+      window.addEventListener("mousemove", (event) => {
+        const x = event.pageX;
+        const y = event.pageY;
+        const width = window.innerWidth;
+        const height = window.innerWidth;
+        if (width < 768) return;
+        `"""*********** hover pic section **************"""`;
+        if (hover_pic_1_ref.current) {
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_1_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_1_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
+        `"""*********** hover pic blur section **************"""`;
+        if (hover_pic_1_blur_ref.current) {
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_1_blur_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
+        `"""*********** hover pic 2 section **************"""`;
+        if (hover_pic_2_ref.current) {
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_2_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_2_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
+        `"""*********** hover pic blur 2 section **************"""`;
+        if (hover_pic_2_blur_ref.current) {
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // 15 to 5 deg
+            "--cardhoverpic-rot-x",
+            `${(y / height) * 5 + 10}deg`,
+          );
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // -25 to -15 deg
+            "--cardhoverpic-rot-y",
+            `${-25 + (x / width) * 10}deg`,
+          );
+          hover_pic_2_blur_ref.current.style.setProperty(
+            // 15 to 10 deg
+            "--cardhoverpic-rot-z",
+            `${15 - (x / width) * 5}deg`,
+          );
+        }
+      });
+
+      window.addEventListener("scroll", scrolly);
+    }, []);
+
+    function scrolly() {
+      if (hover_pic_1_ref.current)
+        hover_pic_1_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_1_blur_ref.current)
+        hover_pic_1_blur_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_ref.current)
+        hover_pic_2_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+      if (hover_pic_2_blur_ref.current)
+        hover_pic_2_blur_ref.current.style.setProperty(
+          "--cardhoverpic-tran-y",
+          `${5 - visibilityPercent(hover_pic_1_ref) * 20}em`,
+        );
+    }
+    return (
+      <div className="m-5">
+        <div className="glow-capture relative w-full overflow-hidden rounded-2xl">
+          <div className="glow group relative flex flex-col flex-wrap items-center justify-center gap-6 overflow-hidden rounded-2xl border-2 border-white/5 bg-[#13243655] px-8 pb-44 pt-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:px-16 sm:py-36 md:flex-row md:items-start md:justify-between">
+            <div className="relative z-10 mx-auto flex justify-center text-center sm:w-1/2">
+              <div>
+                <h2 className="mb-3 font-bold tracking-tighter glow:text-glow/[.5]">
+                  Join the grand Onigama project
+                </h2>
+
+                <p>
+                  Join one of the biggest money-making projects. Onigama offers
+                  comprehensive management and planning at every moment. Join
+                  Onigama and feel the difference
+                </p>
+              </div>
+            </div>
+          </div>
+          <Image
+            src={hover_double_pic_2}
+            width={0}
+            height={0}
+            ref={hover_pic_1_ref}
+            alt=""
+            className="cardhoverpic absolute bottom-0 right-0 w-1/4 rounded-lg"
+          />
+          <Image
+            src={hover_double_pic_2}
+            width={0}
+            height={0}
+            ref={hover_pic_1_blur_ref}
+            alt=""
+            className="cardhoverpic absolute -bottom-1/3 right-0 -z-10 w-1/2 rounded-lg blur-md"
+          />
+          <Image
+            src={hover_double_pic_1}
+            width={0}
+            height={0}
+            ref={hover_pic_2_ref}
+            alt=""
+            className="cardhoverpic absolute -left-[15%] top-0 w-1/4 rounded-lg"
+          />
+          <Image
+            src={hover_double_pic_1}
+            width={0}
+            height={0}
+            ref={hover_pic_2_blur_ref}
+            alt=""
+            className="cardhoverpic absolute -left-1/3 -top-1/3 -z-10 w-1/2 rounded-lg blur-md"
+          />
+          <a
+            className="unGlow_btn absolute left-1/2 top-[70%] -translate-x-1/2"
+            href="#"
+          >
+            Get&nbsp;Started
+          </a>
+
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#ffde00" }}
           ></div>
         </div>
       </div>
@@ -523,6 +716,8 @@ export default function About_us() {
           <Card_9 />
           <Card_10 />
         </div>
+
+        <Card_3_bottum />
       </div>
     </main>
   );

@@ -46,6 +46,76 @@ export default function Pricing() {
   const Price_card_1 = () => {
     return (
       <section className="sm:w-1/2">
+        <div className="glow-capture relative mx-auto my-5 h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
+            <div className="flex-1">
+              <div>
+                <h2 className="mb-3 w-max pr-1 text-2xl font-bold tracking-tighter">
+                  Stake (307 Million Stake )
+                </h2>
+                <h2 className="mb-3 w-max pr-1 text-6xl font-bold tracking-tighter">
+                  58%
+                </h2>
+
+                <p className="border-b border-b-gray-500/10 pb-10">
+                  79.82 million shares to management
+                </p>
+                <p className="py-10">
+                  This part of the shares is allocated to the members of the
+                  management team and the founders
+                </p>
+              </div>
+              <a className="unGlow_btn relative z-30" href="#">
+                Get Started
+              </a>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#ff00ff" }}
+          ></div>
+        </div>
+      </section>
+    );
+  };
+  const Price_card_2 = () => {
+    return (
+      <section className="sm:w-1/2">
+        <div className="glow-capture relative mx-auto my-5 h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
+            <div className="flex-1">
+              <div>
+                <h2 className="mb-3 w-max pr-1 text-2xl font-bold tracking-tighter">
+                  Stake (307 Million Stake )
+                </h2>
+                <h2 className="mb-3 w-max pr-1 text-6xl font-bold tracking-tighter">
+                  6%
+                </h2>
+
+                <p className="border-b border-b-gray-500/10 pb-10">
+                  18.42 million shares to management
+                </p>
+                <p className="py-10">
+                  These shares are being publicly sold at a price of 10 cents
+                  per share
+                </p>
+              </div>
+              <a className="unGlow_btn relative z-30" href="#">
+                Get Started
+              </a>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#03d8ff" }}
+          ></div>
+        </div>
+      </section>
+    );
+  };
+  const Price_card_3 = () => {
+    return (
+      <section className="sm:w-1/2">
         <div className="glow-capture relative mx-auto my-5 w-11/12 sm:m-0 sm:w-full">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
@@ -65,14 +135,11 @@ export default function Pricing() {
                   management team and the founders
                 </p>
               </div>
+              <a className="unGlow_btn relative z-30" href="#">
+                Get Started
+              </a>
             </div>
           </div>
-          <a
-            className="unGlow_btn absolute bottom-10 left-7 lg:left-20"
-            href="#"
-          >
-            Get Started
-          </a>
           <div
             className="glow-overlay"
             style={{ "--glow-color": "#ff00ff" }}
@@ -81,11 +148,11 @@ export default function Pricing() {
       </section>
     );
   };
-  const Price_card_2 = () => {
+  const Price_card_4 = () => {
     return (
       <section className="sm:w-1/2">
-        <div className="glow-capture relative mx-auto my-5 w-11/12 sm:m-0 sm:w-full">
-          <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
+        <div className="glow-capture relative mx-auto my-5 h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
               <div>
                 <h2 className="mb-3 w-max pr-1 text-2xl font-bold tracking-tighter">
@@ -103,14 +170,11 @@ export default function Pricing() {
                   per share
                 </p>
               </div>
+              <a className="unGlow_btn relative z-30" href="#">
+                Get Started
+              </a>
             </div>
           </div>
-          <a
-            className="unGlow_btn absolute bottom-10 left-7 lg:left-20"
-            href="#"
-          >
-            Get Started
-          </a>
           <div
             className="glow-overlay"
             style={{ "--glow-color": "#03d8ff" }}
@@ -847,13 +911,22 @@ export default function Pricing() {
           </p>
         </div>
       </section>
-      <div className="mx-auto max-w-[1200px] pb-52">
-        <div className="flex flex-col sm:flex-row">
+      <div className="mx-auto max-w-[1200px] pb-20">
+        <div className="flex flex-col justify-stretch sm:flex-row">
           <Price_card_1 />
           <Price_card_2 />
         </div>
-        <div className="mx-auto mb-20 mt-4">
-          <FullPlan />
+        <div className="flex flex-col justify-stretch sm:flex-row md:mt-6">
+          <Price_card_3 />
+          <Price_card_4 />
+        </div>
+        <div className="mx-auto mb-20 mt-8 px-8">
+          {/* <FullPlan /> */}
+          <h2>Find the perfect plan for your needs</h2>
+          <p>
+            Pellentesque quis nisl lectus quis quam. Ornare morbi at scelerisque
+            sem. Sodales lorem condimentum dis at sed sed nec.
+          </p>
         </div>
       </div>
       <section>
@@ -870,10 +943,10 @@ export default function Pricing() {
           </p>
         </div>
       </section>
-      <div className="mx-auto max-w-[1200px] pb-52">
+      <div className="mx-auto max-w-[1200px] pb-20">
         <Expandable_sec />
       </div>
-      <div className="mask_bg py-20">
+      {/* <div className="mask_bg py-20">
         <section>
           <div className="mx-auto mb-12 flex max-w-[1200px] flex-col items-center px-10 text-center sm:px-20">
             <div className="rounded-full bg-[#c8ce3f26] px-3 py-1 text-sm uppercase text-[#c8ce3f]">
@@ -900,8 +973,8 @@ export default function Pricing() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mx-auto max-w-[1200px] pb-16">
+      </div> */}
+      <div className="mx-auto max-w-[1200px] pb-0">
         <Card_3 />
       </div>
     </section>

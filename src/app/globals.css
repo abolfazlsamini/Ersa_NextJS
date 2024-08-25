@@ -162,7 +162,7 @@
     transparent 50%
   );
   transition: opacity 1000ms;
-  /* transition-delay: 900ms; */
+  /* transition-delay: 300ms; */
   /* transition: 4000ms all ease; */
   /* will-change: mask; */
 }
@@ -175,12 +175,12 @@
     rotateZ(0deg) skew(0deg);
   /* transform: perspective(100px) rotateX(var(--trans-y)); */
   /* transform-style: preserve-3d; */
-  transition-duration: 900ms;
+  transition-duration: 300ms;
   will-change: transform;
   /* perspective: 1300px; */
 }
 .cardhoverpic {
-  transition-duration: 900ms;
+  transition-duration: 300ms;
   transform: translate3d(
       var(--cardhoverpic-tran-x, 30%),
       var(--cardhoverpic-tran-y, -1.6em),
@@ -191,7 +191,7 @@
     rotateZ(var(--cardhoverpic-rot-z, 10deg)) skew(0deg);
 }
 .hoverpic1 {
-  transition: 700ms transform;
+  transition: 500ms transform;
   transform: translate3d(
       var(--hoverpic-tran-x, 30%),
       var(--hoverpic-tran-y, 2.6em),
@@ -201,7 +201,7 @@
     rotateZ(var(--hoverpic-rot-z, 10deg)) skew(0deg);
 }
 .hoverpic2 {
-  transition: 700ms transform;
+  transition: 500ms transform;
   transform: translate3d(
       var(--hoverpic-tran-x, 100%),
       var(--hoverpic-tran-y, 2.6em),
@@ -211,7 +211,7 @@
     rotateZ(var(--hoverpic-rot-z, 10deg)) skew(0deg);
 }
 .hoverpic3 {
-  transition: 700ms transform;
+  transition: 500ms transform;
   transform: translate3d(
       var(--hoverpic-tran-x, 60%),
       var(--hoverpic-tran-y, 5.6em),

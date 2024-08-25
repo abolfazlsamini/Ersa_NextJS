@@ -457,7 +457,7 @@ export default function Home() {
             height={0}
             ref={cardhoverPic_1}
             alt=""
-            className="cardhoverpic absolute bottom-0 right-0 w-2/3 rounded-lg"
+            className="cardhoverpic absolute bottom-0 right-0 w-[70%] rounded-lg"
           />
           <a
             className="unGlow_btn absolute left-8 top-[70%] sm:left-16"
@@ -609,7 +609,7 @@ export default function Home() {
             height={0}
             ref={cardhoverPic_1}
             alt=""
-            className="cardhoverpic absolute bottom-0 right-0 w-2/3 rounded-lg"
+            className="cardhoverpic absolute bottom-0 right-0 w-[70%] rounded-lg"
           />
           <a
             className="unGlow_btn absolute left-8 top-[70%] sm:left-16"
@@ -1480,7 +1480,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1498,7 +1498,7 @@ export default function Home() {
             style={{ "--glow-color": "#ff0000" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           YouTube
         </h2>
       </div>
@@ -1512,7 +1512,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1530,7 +1530,7 @@ export default function Home() {
             style={{ "--glow-color": "#7c3aed" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           Instagram
         </h2>
       </div>
@@ -1544,7 +1544,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1562,7 +1562,7 @@ export default function Home() {
             style={{ "--glow-color": "#27a4e6" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           Telegram
         </h2>
       </div>
@@ -1576,7 +1576,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1594,7 +1594,7 @@ export default function Home() {
             style={{ "--glow-color": "#8f46fc" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           Twitch
         </h2>
       </div>
@@ -1608,7 +1608,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1626,7 +1626,7 @@ export default function Home() {
             style={{ "--glow-color": "#ffffff" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           X
         </h2>
       </div>
@@ -1640,7 +1640,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1658,7 +1658,7 @@ export default function Home() {
             style={{ "--glow-color": "#0865fe" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           FaceBook
         </h2>
       </div>
@@ -1672,7 +1672,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1690,7 +1690,7 @@ export default function Home() {
             style={{ "--glow-color": "#0275b4" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           LinkedIn
         </h2>
       </div>
@@ -1704,7 +1704,7 @@ export default function Home() {
     }, []);
     return (
       <div className="mx-auto text-center">
-        <div className="glow-capture relative m-2 w-11/12 sm:m-0 sm:w-max">
+        <div className="glow-capture relative m-2 w-20 sm:m-0 sm:w-20">
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-2 shadow-lg shadow-black/80 glow:border-glow glow:ring-1 glow:ring-glow sm:p-5 md:flex-row md:items-start md:justify-between">
             <div className="">
               <Image
@@ -1722,7 +1722,7 @@ export default function Home() {
             style={{ "--glow-color": "#ffffff" }}
           ></div>
         </div>
-        <h2 className="mx-auto mb-8 w-max text-xl font-bold tracking-tighter">
+        <h2 className="mx-auto my-3 w-max text-xl font-bold tracking-tighter">
           Github
         </h2>
       </div>
@@ -1847,14 +1847,14 @@ export default function Home() {
             Follow us on social media to stay updated with the latest news
           </h1>
           <div className="my-20 w-full max-w-[1200px]">
-            <div className="flex w-full flex-row lg:flex-col">
-              <div className="mx-auto mt-10 flex w-full flex-col justify-between sm:px-10 lg:flex-row">
+            <div className="flex w-full flex-row">
+              <div className="mx-auto mt-10 flex w-full flex-col justify-between lg:flex-row">
                 <Small_card_1 />
                 <Small_card_2 />
                 <Small_card_3 />
                 <Small_card_4 />
               </div>
-              <div className="mx-auto mt-10 flex w-full flex-col justify-between sm:px-10 lg:flex-row">
+              <div className="mx-auto mt-10 flex w-full flex-col justify-between lg:flex-row">
                 <Small_card_5 />
                 <Small_card_6 />
                 <Small_card_7 />
