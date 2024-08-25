@@ -78,7 +78,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/liquidity_provider"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />

@@ -1762,8 +1762,9 @@ export default function Home() {
     <main>
       <section>
         <section>
-          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-3/4 xl:my-36 2xl:w-1/2">
-            <h1>Make Your Money Do The Most</h1>
+          <div className="mx-auto mt-32 flex flex-col items-center px-10 text-center sm:px-20 lg:w-3/4 xl:mt-36 2xl:w-1/2">
+            <h1>Make Your Money</h1>
+            <h1>Do The Most</h1>
             <p>
               Investing today is not just about securing your future; it&apos;s
               about creating opportunities for growth and prosperity that you
