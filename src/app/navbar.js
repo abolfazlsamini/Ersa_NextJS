@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className="fixed left-1/2 top-3 z-30 w-[99%] max-w-[1180px] -translate-x-1/2 rounded-full border border-[#6f87a042] bg-[#09121de5] px-3 py-3 md:w-11/12">
+    <nav className="fixed left-1/2 top-3 z-50 w-[99%] max-w-[1180px] -translate-x-1/2 rounded-full border border-[#6f87a042] bg-[#09121de5] px-3 py-3 md:w-11/12">
       <div className="relative mx-auto w-11/12 md:w-full">
         <div className="flex items-center justify-between space-x-8 font-creato_medium text-[#6f87a0eb]">
           <div className="block lg:hidden">
