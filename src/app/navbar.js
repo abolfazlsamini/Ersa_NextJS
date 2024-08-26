@@ -31,13 +31,13 @@ export default function Navbar() {
               Features
             </Link>
             <Link
-              href="/pricing"
+              href="/stock"
               onClick={() => {
                 setToggleMenu(false);
               }}
               className="cursor-pointer hover:text-white"
             >
-              Pricing
+              Stock
             </Link>
             <Link
               href="/about_us"
@@ -129,13 +129,13 @@ export default function Navbar() {
                   Features
                 </Link>
                 <Link
-                  href="/pricing"
+                  href="/stock"
                   onClick={() => {
                     setToggleMenu(false);
                   }}
                   className="mt-3 block cursor-pointer hover:text-white"
                 >
-                  Pricing
+                  Stock
                 </Link>
                 <Link
                   href="/about_us"

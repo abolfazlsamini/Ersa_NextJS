@@ -7,7 +7,7 @@ import bubble_icon from "../../../public/home/bubble_icon.svg";
 import x_icon from "../../../public/x_icon.svg";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
-export default function Pricing() {
+export default function Stock() {
   let visibilityPercent = (mainPicRef) => {
     const windowHeight = window.visualViewport.height;
     if (windowHeight - mainPicRef.current.getBoundingClientRect().top < 0) {

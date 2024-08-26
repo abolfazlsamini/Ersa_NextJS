@@ -32,9 +32,9 @@ export default function Footer() {
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/pricing"
+                href="/stock"
               >
-                pricing
+                stock
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
@@ -61,9 +61,9 @@ export default function Footer() {
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/pricing"
+                href="/stock"
               >
-                pricing
+                stock
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
@@ -90,9 +90,9 @@ export default function Footer() {
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/pricing"
+                href="/stock"
               >
-                pricing
+                stock
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
