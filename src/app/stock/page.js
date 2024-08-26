@@ -689,7 +689,7 @@ export default function Stock() {
           <Price_card_1 />
           <Price_card_2 />
         </div>
-        <div className="flex flex-col justify-stretch sm:mt-6 sm:flex-row">
+        <div className="mb-12 flex flex-col justify-stretch sm:mt-6 sm:flex-row">
           <Price_card_3 />
           <Price_card_4 />
         </div>
