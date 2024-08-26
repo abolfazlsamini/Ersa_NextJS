@@ -62,9 +62,9 @@ export default function Stock() {
                 </p>
                 <p className="py-10">
                   26% of the total shares are allocated to management. This
-                  portion of the stock is allocated to the company's managers
-                  and executive team to encourage them to perform better and
-                  increase the value of the company
+                  portion of the stock is allocated to the company&apos;s
+                  managers and executive team to encourage them to perform
+                  better and increase the value of the company
                 </p>
               </div>
               <a className="unGlow_btn relative z-30" href="#">
@@ -722,8 +722,8 @@ export default function Stock() {
             Incentive Shares for Managers and Employees: Onigama can grant its
             employees and managers shares or stock options to encourage them to
             perform better and increase productivity. This leads to the
-            alignment of employees' interests with those of shareholders and
-            causes their efforts to increase the value of the company.
+            alignment of employees&apos; interests with those of shareholders
+            and causes their efforts to increase the value of the company.
           </p>
           <p>
             Retaining talent and motivating more: Giving shares to employees at
@@ -750,21 +750,21 @@ export default function Stock() {
             successful investments, the value of the shares increases, and
             consequently, the value of the company as a whole grows. This
             increase in value can attract new investors and strengthen the
-            company's position in the financial markets.
+            company&apos;s position in the financial markets.
           </p>
           <p>
-            Reflection of the company's performance in the stock market: The
-            stock price of Onigama in the market can indicate the financial
-            performance and prospects of the company's investments. Successful
-            performance in investment projects can lead to an increase in stock
-            prices and build confidence among investors
+            Reflection of the company&apos;s performance in the stock market:
+            The stock price of Onigama in the market can indicate the financial
+            performance and prospects of the company&apos;s investments.
+            Successful performance in investment projects can lead to an
+            increase in stock prices and build confidence among investors
           </p>
           <h2 className="mt-7">Optimal Use of Equity</h2>
           <p>
             Strategic use of stock issuance and redemption: Onigama management
             must carefully determine when and how much new stock is issued or
             existing stock is redeemed. These decisions should be made based on
-            a careful assessment of market conditions and the company's
+            a careful assessment of market conditions and the company&apos;s
             investment needs in order to achieve the most optimal outcome.
           </p>
           <p>
@@ -792,11 +792,11 @@ export default function Stock() {
           </p>
           <h2 className="mt-7">Conclusion</h2>
           <p>
-            The stock efficiency in Onigama represents the company's ability to
-            make the best use of stocks to achieve its financial and strategic
-            goals. This concept refers to the balance between attracting
-            capital, motivating employees, managing risk, increasing the value
-            of the company, and maintaining control over the ownership
+            The stock efficiency in Onigama represents the company&apos;s
+            ability to make the best use of stocks to achieve its financial and
+            strategic goals. This concept refers to the balance between
+            attracting capital, motivating employees, managing risk, increasing
+            the value of the company, and maintaining control over the ownership
             structure. With the right strategies, Onigama can be successful in
             raising capital, improving financial performance, and building trust
             in the market, strengthening its position among investment firms
@@ -810,19 +810,19 @@ export default function Stock() {
             investors at the same time.
           </p>
           <p>
-            Flexibility : This structure reflects the company's flexibility in
-            raising capital through various channels, which helps expand access
-            to financial resources
+            Flexibility : This structure reflects the company&apos;s flexibility
+            in raising capital through various channels, which helps expand
+            access to financial resources
           </p>
           <h2 className="mt-7">Ways to make money for Onigama shareholders</h2>
           <h2 className="mt-7">1 : Stock price increase</h2>
           <p>
-            Added value through company growth: Onigama Company's successful
-            performance in project execution and asset management leads to an
-            increase in company value. This increase in value is directly
-            reflected in the stock price. Shareholders can profit from this
-            increase by holding their stock over time and selling it at a higher
-            price in the future.
+            Added value through company growth: Onigama Company&apos;s
+            successful performance in project execution and asset management
+            leads to an increase in company value. This increase in value is
+            directly reflected in the stock price. Shareholders can profit from
+            this increase by holding their stock over time and selling it at a
+            higher price in the future.
           </p>
           <p>
             Market volatility: The stock price may be affected by market
@@ -842,7 +842,7 @@ export default function Stock() {
           <p>
             Dividends: In addition to increasing the value of shares,
             shareholders may also benefit from dividends. This dividend is paid
-            to shareholders as part of the company's net profit and can be
+            to shareholders as part of the company&apos;s net profit and can be
             awarded in cash or in the form of additional stock tokens.
           </p>
           <p>
@@ -935,15 +935,16 @@ export default function Stock() {
             platform to attract various investors and strengthen its position in
             the market. The division of stocks into segments such as management
             stocks, open selling, stocks for small investors, and internal sales
-            of the system shows the company's flexibility and targeted strategy.
+            of the system shows the company&apos;s flexibility and targeted
+            strategy.
           </p>
           <p>
             Onigama shareholders can earn money in two main ways, namely
-            increasing the share price and participating in the company's
+            increasing the share price and participating in the company&apos;s
             projects. This approach, in addition to increasing the value of
-            shareholders' assets, creates more opportunities to benefit from the
-            profits of successful projects. In the future, converting stocks
-            into real assets (RWAs) as a long-term strategy could lead to
+            shareholders&apos; assets, creates more opportunities to benefit
+            from the profits of successful projects. In the future, converting
+            stocks into real assets (RWAs) as a long-term strategy could lead to
             increased investment stability and security, as these stocks are
             directly linked to physical and real assets.
           </p>
