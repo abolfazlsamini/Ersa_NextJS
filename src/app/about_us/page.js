@@ -122,7 +122,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="/about_us/gaming_and_mining"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -166,7 +166,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/startup"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -210,7 +210,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="/about_us/forex"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -254,7 +254,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/blockchain"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -298,7 +298,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/mining"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -342,7 +342,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="/about_us/import_and_export"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -386,7 +386,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/tourism"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -430,7 +430,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/cinema"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />
@@ -475,7 +475,7 @@ export default function About_us() {
                 <div className="absolute bottom-10">
                   <Link
                     className="greater_link w-max [&_p]:hover:!text-white"
-                    href="#"
+                    href="about_us/more"
                   >
                     <div className="greater_img absolute bottom-1/2 left-0 z-20 translate-y-1/2 rounded-full p-3 lg:left-0">
                       <Image src={greater_icon} width={0} height={0} alt="" />

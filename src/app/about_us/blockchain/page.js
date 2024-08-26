@@ -1,9 +1,14 @@
 "use client";
-import hover_double_pic_1 from "../../../public/home/hover_double_pic_1.webp";
-import hover_double_pic_2 from "../../../public/home/hover_double_pic_2.webp";
-import { useRef, useEffect } from "react";
+
+import hover_double_pic_1 from "../../../../public/home/hover_double_pic_1.webp";
+import hover_double_pic_2 from "../../../../public/home/hover_double_pic_2.webp";
+
+import blockchain from "../../../../public/about_us/pages/blockchain.jpg";
+
 import Image from "next/image";
-export default function Contact() {
+import { useEffect, useRef } from "react";
+
+export default function Blockchain() {
   useEffect(() => {
     const captures = document.querySelectorAll(".glow-capture");
     captures.forEach((capture) => {
@@ -39,93 +44,8 @@ export default function Contact() {
       (windowHeight * 2)
     );
   };
-  const Avatar_card_1 = () => {
-    const overlay_ref = new useRef();
-    useEffect(() => {
-      overlay_ref.current.style.setProperty("--glow-size", `35rem`);
-    }, []);
-    return (
-      <section className="mx-auto w-full max-w-[49em] overflow-hidden py-10">
-        <div className="glow-capture relative m-auto w-11/12 sm:mx-0 sm:my-0 sm:w-full">
-          <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] px-8 pt-5 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-2 sm:mb-4 md:flex-row md:items-start md:justify-between">
-            <form className="relative w-full">
-              <div className="flex w-full py-5">
-                <div className="flex w-1/2 flex-col pr-2">
-                  <label for="first-name" className="text-xs uppercase">
-                    <p>
-                      First Name&nbsp;
-                      <span className="text-[#5566ff]">{"(required)"}</span>
-                    </p>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    name="First-Name"
-                    id="first-name"
-                    required
-                    className="z-20 rounded-xl border border-[#132436] bg-[#050b1180] px-5 py-4 placeholder:text-[#6f87a0eb] focus:border-[#5566ff] focus:outline-none focus-visible:outline-8"
-                  ></input>
-                </div>
-                <div className="flex w-1/2 flex-col pl-2">
-                  <label for="last-name" className="text-xs uppercase">
-                    <p>Last Name</p>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    name="Last-Name"
-                    id="last-name"
-                    className="z-20 rounded-xl border border-[#132436] bg-[#050b1180] px-5 py-4 placeholder:text-[#6f87a0eb] focus:border-[#5566ff] focus:outline-none focus-visible:outline-8"
-                  ></input>
-                </div>
-              </div>
-              <div className="flex w-full flex-col pr-2">
-                <label for="email" className="text-xs uppercase">
-                  <p>
-                    Email&nbsp;
-                    <span className="text-[#5566ff]">{"(required)"}</span>
-                  </p>
-                </label>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  name="Email"
-                  id="email"
-                  required
-                  className="z-20 rounded-xl border border-[#132436] bg-[#050b1180] px-5 py-4 placeholder:text-[#6f87a0eb] focus:border-[#5566ff] focus:outline-none focus-visible:outline-8"
-                ></input>
-              </div>
-              <div className="mb-28 flex w-full flex-col pr-2">
-                <label for="message" className="text-xs uppercase">
-                  <p>
-                    Message&nbsp;
-                    <span className="text-[#5566ff]">{"(required)"}</span>
-                  </p>
-                </label>
-                <textarea
-                  placeholder="Tell us how we can help"
-                  name="Message"
-                  id="message"
-                  required
-                  maxLength="5000"
-                  className="z-20 min-h-[16em] rounded-xl border border-[#132436] bg-[#050b1180] px-5 py-4 placeholder:text-[#6f87a0eb] focus:border-[#5566ff] focus:outline-none focus-visible:outline-8"
-                ></textarea>
-              </div>
-              <button className="unGlow_btn absolute bottom-6 z-30 w-full rounded-xl">
-                Submit
-              </button>
-            </form>
-          </div>
-          <div
-            className="glow-overlay"
-            ref={overlay_ref}
-            style={{ "--glow-color": "#5566ff" }}
-          ></div>
-        </div>
-      </section>
-    );
-  };
-  const Card_3 = () => {
+
+  const Card_3_bottum = () => {
     console.count();
     const hover_pic_1_ref = useRef();
     const hover_pic_1_blur_ref = useRef();
@@ -241,7 +161,7 @@ export default function Contact() {
       <div className="m-5">
         <div className="glow-capture relative w-full overflow-hidden rounded-2xl">
           <div className="glow group relative flex flex-col flex-wrap items-center justify-center gap-6 overflow-hidden rounded-2xl border-2 border-white/5 bg-[#13243655] px-8 pb-44 pt-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:px-16 sm:py-36 md:flex-row md:items-start md:justify-between">
-            <div className="relative z-10 mx-auto flex justify-center text-center md:w-2/3 2xl:w-1/2">
+            <div className="relative z-10 mx-auto flex justify-center text-center sm:w-1/2">
               <div>
                 <h2 className="mb-3 font-bold tracking-tighter glow:text-glow/[.5]">
                   Join the grand Onigama project
@@ -303,29 +223,55 @@ export default function Contact() {
     );
   };
   return (
-    <section className="mt-32">
-      <section>
-        <div className="mx-auto mb-1 flex max-w-[1200px] flex-col items-center px-10 text-center sm:px-20">
-          <div className="rounded-full bg-[#eb728126] px-3 py-1 text-sm uppercase text-[#eb7281]">
-            Contact
+    <main className="mt-20 overflow-hidden py-10">
+      <section className="mx-auto max-w-[1200px]">
+        <div className="mx-auto mt-16 flex flex-col items-center px-10 text-center sm:px-20">
+          <div className="rounded-full bg-[#5566ff26] px-3 py-1 text-sm uppercase text-[#56f]">
+            Blockchain and tokens
           </div>
-          <h1 className="mb-10 mt-5 text-center text-5xl sm:text-7xl md:w-2/3 2xl:w-2/3">
-            Contact our support team for assistance
+          <h1 className="mb-10 mt-5 text-center">
+            Blockchain technology and digital tokens are among the most
+            important innovations of the last decade
           </h1>
-          <p className="mx-auto md:w-1/2">
-            Feel free to ask us any questions . Onigama will answer all your
-            questions.
+        </div>
+      </section>
+      <section className="mx-auto max-w-[1240px] px-4 md:px-8">
+        <div>
+          <Image
+            src={blockchain}
+            alt=""
+            placeholder="blur"
+            width={0}
+            height={0}
+            className="mx-auto rounded-xl"
+          />
+        </div>
+      </section>
+      <section className="mx-auto my-20 max-w-[1200px]">
+        <div className="mx-auto w-11/12 px-4">
+          <p>
+            Blockchain technology and digital tokens are among the most
+            important innovations of the last decade. We use these technologies
+            to implement and develop various projects
+          </p>
+          <h2 className="mb-5 mt-8">Monetization strategies</h2>
+          <p>
+            Developing and issuing own tokens for various projects and
+            generating revenue from their sale
+          </p>
+          <p>
+            Creating blockchain-based platforms for the execution of smart
+            contracts and earning transaction fees
+          </p>
+          <p>
+            Offering blockchain development and consulting services for
+            companies and start-ups
           </p>
         </div>
       </section>
-      <div className="py-20">
-        <div className="mx-auto max-w-[1200px] px-2">
-          <Avatar_card_1 />
-        </div>
+      <div className="mx-auto max-w-[1200px]">
+        <Card_3_bottum />
       </div>
-      <div className="mx-auto max-w-[1200px] pb-0">
-        <Card_3 />
-      </div>
-    </section>
+    </main>
   );
 }
