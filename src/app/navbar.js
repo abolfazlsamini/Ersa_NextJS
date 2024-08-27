@@ -21,7 +21,7 @@ export default function Navbar() {
             <Link href="/">
               <Image alt="" width={0} height={0} src={logo} />
             </Link>
-            <Link
+            {/* <Link
               href=""
               onClick={() => {
                 setToggleMenu(false);
@@ -29,7 +29,7 @@ export default function Navbar() {
               className="cursor-pointer hover:text-white"
             >
               Features
-            </Link>
+            </Link> */}
             <Link
               href="/stock"
               onClick={() => {
@@ -58,13 +58,22 @@ export default function Navbar() {
               Contacts
             </Link>
             <Link
-              href="/kengoa"
+              href="/plan"
               onClick={() => {
                 setToggleMenu(false);
               }}
               className="cursor-pointer hover:text-white"
             >
-              Kengoa
+              Plan
+            </Link>
+            <Link
+              href="/realm_builder"
+              onClick={() => {
+                setToggleMenu(false);
+              }}
+              className="cursor-pointer hover:text-white"
+            >
+              Realm Builder
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -119,7 +128,7 @@ export default function Navbar() {
                     : "absolute left-0 top-14 z-20 max-h-0 w-full overflow-hidden rounded-lg border-[#6f87a042] bg-[#070f17cc] px-5 backdrop-blur-lg transition-all duration-300 sm:top-16"
                 }
               >
-                <Link
+                {/* <Link
                   href=""
                   onClick={() => {
                     setToggleMenu(false);
@@ -127,7 +136,7 @@ export default function Navbar() {
                   className="my-3 block cursor-pointer hover:text-white"
                 >
                   Features
-                </Link>
+                </Link> */}
                 <Link
                   href="/stock"
                   onClick={() => {
@@ -156,13 +165,22 @@ export default function Navbar() {
                   Contacts
                 </Link>
                 <Link
-                  href="/kengoa"
+                  href="/plan"
                   onClick={() => {
                     setToggleMenu(false);
                   }}
                   className="my-3 block cursor-pointer hover:text-white"
                 >
-                  Kengoa
+                  Plan
+                </Link>
+                <Link
+                  href="/realm_builder"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                  className="my-3 block cursor-pointer hover:text-white"
+                >
+                  Realm Builder
                 </Link>
                 <Link
                   href=""
@@ -184,12 +202,12 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <div className="glow_btn relative px-4 py-2 font-creato_medium text-sm">
+            {/* <div className="glow_btn relative px-4 py-2 font-creato_medium text-sm">
               <Image alt="" width={0} height={0} src={cart_icon} />
               <div className="absolute -top-1/2 right-0 translate-y-1/2 rounded-full bg-blue-600 px-2">
                 0
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

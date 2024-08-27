@@ -2,8 +2,6 @@
 
 import hover_double_pic_1 from "../../../public/home/hover_double_pic_1.webp";
 import hover_double_pic_2 from "../../../public/home/hover_double_pic_2.webp";
-import avatar_1 from "../../../public/home/avatar_1.webp";
-import bubble_icon from "../../../public/home/bubble_icon.svg";
 import x_icon from "../../../public/x_icon.svg";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
@@ -74,7 +72,7 @@ export default function Stock() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#01eeda" }}
           ></div>
         </div>
       </section>
@@ -110,7 +108,7 @@ export default function Stock() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#03d8ff" }}
+            style={{ "--glow-color": "#ee017c" }}
           ></div>
         </div>
       </section>
@@ -148,7 +146,7 @@ export default function Stock() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#ff00ff" }}
+            style={{ "--glow-color": "#fcff00" }}
           ></div>
         </div>
       </section>
@@ -185,42 +183,13 @@ export default function Stock() {
           </div>
           <div
             className="glow-overlay"
-            style={{ "--glow-color": "#03d8ff" }}
+            style={{ "--glow-color": "#0078ff" }}
           ></div>
         </div>
       </section>
     );
   };
-  const FullPlan = () => {
-    return (
-      <section className="px-6">
-        <div className="flex w-full flex-col items-center rounded-2xl border-2 border-white/5 bg-[#09121de5] px-4">
-          <div className="mx-auto text-center">
-            <div className="m-2 items-center sm:m-0 sm:w-full">
-              <div className="p-2 sm:p-5">
-                <div className="">
-                  <Image
-                    src={bubble_icon}
-                    width={0}
-                    height={0}
-                    alt=""
-                    className="mx-auto my-3 rounded-lg"
-                  />
-                  <h2 className="mx-auto text-xl">
-                    To view the complete Onigama stock and plan details, please
-                    visit the Plan page
-                  </h2>
-                  <a className="unGlow_btn my-5" href="#">
-                    View Full Plan
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  };
+
   const Card_3 = () => {
     console.count();
     const hover_pic_1_ref = useRef();
@@ -344,12 +313,12 @@ export default function Stock() {
             <div className="relative z-10 mx-auto flex justify-center text-center sm:w-1/2">
               <div>
                 <h2 className="mb-3 font-bold tracking-tighter glow:text-glow/[.5]">
-                  Get started with our SaaS platform
+                  Join the grand Onigama project
                 </h2>
-
                 <p>
-                  Vestibulum mattis ornare sed erat arcu. Id lorem a volutpat
-                  enim nunc. Eget sem lacus.
+                  Join one of the biggest money-making projects. Onigama offers
+                  comprehensive management and planning at every moment. Join
+                  Onigama and feel the difference
                 </p>
               </div>
             </div>

@@ -37,6 +37,7 @@ import small_cards_7 from "../../public/home/small_cards_7.png";
 import small_cards_8 from "../../public/home/small_cards_8.png";
 
 import avatar_1 from "../../public/home/avatar_1.webp";
+import Link from "next/link";
 export default function Home() {
   let visibilityPercent = (mainPicRef) => {
     const windowHeight = window.visualViewport.height;
@@ -967,19 +968,21 @@ export default function Home() {
           <div className="glow group flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-6 pb-16 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:mx-5 md:flex-row md:items-start md:justify-between md:p-16">
             <div className="flex-1">
               <div>
-                <h2 className="mb-3 w-max pr-1 text-2xl font-bold tracking-tighter">
-                  Stake (307 Million Stake )
+                <h2 className="mb-3 pr-1 text-2xl font-bold tracking-tighter">
+                  Stock Count (79.82 Million)
                 </h2>
-                <h2 className="mb-3 w-max pr-1 text-6xl font-bold tracking-tighter">
-                  58%
+                <h2 className="mb-3 pr-1 text-6xl font-bold tracking-tighter">
+                  Management - 26%
                 </h2>
 
                 <p className="border-b border-b-gray-500/10 pb-10">
-                  79.82 million shares to management
+                  79.82 Million shares to management
                 </p>
                 <p className="py-10">
-                  This part of the shares is allocated to the members of the
-                  management team and the founders
+                  26% of the total shares are allocated to management. This
+                  portion of the stock is allocated to the company's managers
+                  and executive team to encourage them to perform better and
+                  increase the value of the company
                 </p>
               </div>
             </div>
@@ -1006,18 +1009,19 @@ export default function Home() {
             <div className="flex-1">
               <div>
                 <h2 className="mb-3 w-max pr-1 text-2xl font-bold tracking-tighter">
-                  Stake (307 Million Stake )
+                  tock Count: 18.42 Million
                 </h2>
                 <h2 className="mb-3 w-max pr-1 text-6xl font-bold tracking-tighter">
-                  6%
+                  Open Sale - 6%
                 </h2>
 
                 <p className="border-b border-b-gray-500/10 pb-10">
-                  18.42 million shares to management
+                  Price per share: 10 cents
                 </p>
                 <p className="py-10">
-                  These shares are being publicly sold at a price of 10 cents
-                  per share
+                  6% of the total shares are sold freely on the market for 10
+                  cents. This section allows public investors to buy shares of
+                  the company
                 </p>
               </div>
             </div>
@@ -1747,9 +1751,9 @@ export default function Home() {
                     To view the complete Onigama stock and plan details, please
                     visit the Plan page
                   </h2>
-                  <a className="unGlow_btn my-5" href="#">
-                    View Full Plan
-                  </a>
+                  <Link className="unGlow_btn my-5" href="/plan">
+                    See More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1879,7 +1883,7 @@ export default function Home() {
             <Price_card_1 />
             <Price_card_2 />
           </div>
-          <div className="mx-auto mb-20 mt-4">
+          <div className="mx-auto mb-20 mt-8">
             <FullPlan />
           </div>
           <Card_3 />

@@ -1,18 +1,18 @@
 "use client";
 import Image from "next/image";
 
-import sec1_pic_pc from "../../../public/kengoa/sec1_pic_pc.jpg";
-import sec1_logo from "../../../public/kengoa/sec1_logo.png";
+import sec1_pic_pc from "../../../public/realm_builder/sec1_pic_pc.jpg";
+import sec1_logo from "../../../public/realm_builder/sec1_logo.png";
 
-import sec2_pic_1 from "../../../public/kengoa/sec2_pic_1.jpg";
-import sec2_pic_2 from "../../../public/kengoa/sec2_pic_2.jpg";
-import sec2_pic_3 from "../../../public/kengoa/sec2_pic_3.jpg";
+import sec2_pic_1 from "../../../public/realm_builder/sec2_pic_1.jpg";
+import sec2_pic_2 from "../../../public/realm_builder/sec2_pic_2.jpg";
+import sec2_pic_3 from "../../../public/realm_builder/sec2_pic_3.jpg";
 
-import sec3_pic_1 from "../../../public/kengoa/sec3_pic_1.jpg";
-import sec3_pic_2 from "../../../public/kengoa/sec3_pic_2.jpg";
-import sec3_pic_3 from "../../../public/kengoa/sec3_pic_3.jpg";
+import sec3_pic_1 from "../../../public/realm_builder/sec3_pic_1.jpg";
+import sec3_pic_2 from "../../../public/realm_builder/sec3_pic_2.jpg";
+import sec3_pic_3 from "../../../public/realm_builder/sec3_pic_3.jpg";
 
-export default function Kengoa() {
+export default function Realm_builder() {
   const Sec_1 = () => {
     return (
       <section>
@@ -20,7 +20,7 @@ export default function Kengoa() {
           <div>
             <picture>
               <source
-                srcSet="./kengoa/sec1_pic_mobile.jpg"
+                srcSet="./realm_builder/sec1_pic_mobile.jpg"
                 media="(max-width:767.95px)"
               ></source>
               <Image
@@ -35,7 +35,7 @@ export default function Kengoa() {
           </div>
           <div className="absolute bottom-0 left-1/2 mx-auto flex w-11/12 -translate-x-1/2 flex-col items-center md:bottom-1/2 md:left-20 md:block md:w-1/2 md:translate-x-0 md:translate-y-1/2 2xl:left-1/4 2xl:w-1/4">
             <Image width={0} height={0} alt="" src={sec1_logo} />
-            <div className="font-neueplaktext_regular my-2 text-xl">
+            <div className="my-2 font-neueplaktext_regular text-xl">
               Check out the Tales of Kenzera™: kengoa launch trailer and embark
               on your adventure through the beautiful and treacherous lands of
               Kenzera today!
@@ -56,7 +56,7 @@ export default function Kengoa() {
   const Discord = () => {
     return (
       <section>
-        <div className="kengoa_discord_bg">
+        <div className="realm_builder_discord_bg">
           <div className="mx-auto flex flex-col items-center justify-between px-10 py-5 md:flex-row md:px-20 xl:w-3/4">
             <div className="font-kengoa text-2xl font-bold uppercase text-black">
               Chat with the team on Discord
@@ -86,7 +86,7 @@ export default function Kengoa() {
     return (
       <section>
         <div>
-          <div className="kengoa_src_2_bg_1 flex flex-col items-center md:flex-row-reverse">
+          <div className="realm_builder_src_2_bg_1 flex flex-col items-center md:flex-row-reverse">
             <div className="md:w-1/2">
               <Image
                 width={0}
@@ -102,7 +102,7 @@ export default function Kengoa() {
                 <div className="font-t1korium text-[54px] 2xl:text-[100px]">
                   BECOME THE WARRIOR SHAMAN
                 </div>
-                <div className="font-neueplaktext_regular my-2 text-xl">
+                <div className="my-2 font-neueplaktext_regular text-xl">
                   Embark on a poignant single-player story shaped by actor
                   Abubakar Salim`&apos;s own experience with grief, discovering
                   how love gives us the courage to press on after devastating
@@ -114,7 +114,7 @@ export default function Kengoa() {
           </div>
         </div>
         <div>
-          <div className="kengoa_src_2_bg_2 flex flex-col items-center md:flex-row">
+          <div className="realm_builder_src_2_bg_2 flex flex-col items-center md:flex-row">
             <div className="md:w-1/2">
               <Image
                 width={0}
@@ -130,7 +130,7 @@ export default function Kengoa() {
                 <div className="font-t1korium text-[54px] 2xl:text-[100px]">
                   BECOME THE WARRIOR SHAMAN
                 </div>
-                <div className="font-neueplaktext_regular my-2 text-xl">
+                <div className="my-2 font-neueplaktext_regular text-xl">
                   Embark on a poignant single-player story shaped by actor
                   Abubakar Salim`&apos;s own experience with grief, discovering
                   how love gives us the courage to press on after devastating
@@ -142,7 +142,7 @@ export default function Kengoa() {
           </div>
         </div>
         <div>
-          <div className="kengoa_src_2_bg_3 flex flex-col items-center md:flex-row-reverse">
+          <div className="realm_builder_src_2_bg_3 flex flex-col items-center md:flex-row-reverse">
             <div className="md:w-1/2">
               <Image
                 width={0}
@@ -158,7 +158,7 @@ export default function Kengoa() {
                 <div className="font-t1korium text-[54px] 2xl:text-[100px]">
                   BECOME THE WARRIOR SHAMAN
                 </div>
-                <div className="font-neueplaktext_regular my-2 text-xl">
+                <div className="my-2 font-neueplaktext_regular text-xl">
                   Embark on a poignant single-player story shaped by actor
                   Abubakar Salim`&apos;s own experience with grief, discovering
                   how love gives us the courage to press on after devastating
@@ -175,12 +175,12 @@ export default function Kengoa() {
   const Sec_3 = () => {
     return (
       <section>
-        <div className="kengoa_src_3_bg py-20">
-          <div className="font-t1korium text-center text-[54px] 2xl:text-[100px]">
+        <div className="realm_builder_src_3_bg py-20">
+          <div className="text-center font-t1korium text-[54px] 2xl:text-[100px]">
             LATEST NEWS
           </div>
           <div className="mx-auto md:flex md:w-10/12">
-            <div className="kengoa_card_shadow mb-4 cursor-pointer bg-white transition-all duration-500 ease-in-out hover:-translate-y-1 md:mr-4 md:w-1/3">
+            <div className="realm_builder_card_shadow mb-4 cursor-pointer bg-white transition-all duration-500 ease-in-out hover:-translate-y-1 md:mr-4 md:w-1/3">
               <Image
                 width={0}
                 height={0}
@@ -196,14 +196,14 @@ export default function Kengoa() {
                 <div className="font-kengoa text-xl font-bold uppercase text-black xl:text-2xl">
                   Play the new Tales of Kenzera™: kengoa demo now!
                 </div>
-                <div className="font-neueplaktext_regular mt-2 hidden text-xl text-black md:block">
+                <div className="mt-2 hidden font-neueplaktext_regular text-xl text-black md:block">
                   Wield the dance of the shaman in the updated demo, now
                   available on Steam. Trial coming to Xbox and PlayStation this
                   week!
                 </div>
               </div>
             </div>
-            <div className="kengoa_card_shadow mb-4 cursor-pointer bg-white transition-all duration-500 ease-in-out hover:-translate-y-1 md:mr-4 md:w-1/3">
+            <div className="realm_builder_card_shadow mb-4 cursor-pointer bg-white transition-all duration-500 ease-in-out hover:-translate-y-1 md:mr-4 md:w-1/3">
               <Image
                 width={0}
                 height={0}
@@ -219,12 +219,12 @@ export default function Kengoa() {
                 <div className="font-kengoa text-xl font-bold uppercase text-black xl:text-2xl">
                   Play the new Tales of Kenzera™: kengoa demo now!
                 </div>
-                <div className="font-neueplaktext_regular mt-2 hidden text-xl text-black md:block">
+                <div className="mt-2 hidden font-neueplaktext_regular text-xl text-black md:block">
                   Details regarding the 1.1.1 hotfix
                 </div>
               </div>
             </div>
-            <div className="kengoa_card_shadow mb-4 cursor-pointer bg-white transition-all duration-500 ease-in-out hover:-translate-y-1 md:mr-4 md:w-1/3">
+            <div className="realm_builder_card_shadow mb-4 cursor-pointer bg-white transition-all duration-500 ease-in-out hover:-translate-y-1 md:mr-4 md:w-1/3">
               <Image
                 width={0}
                 height={0}
@@ -240,7 +240,7 @@ export default function Kengoa() {
                 <div className="font-kengoa text-xl font-bold uppercase text-black xl:text-2xl">
                   Play the new Tales of Kenzera™: kengoa demo now!
                 </div>
-                <div className="font-neueplaktext_regular mt-2 hidden text-xl text-black md:block">
+                <div className="mt-2 hidden font-neueplaktext_regular text-xl text-black md:block">
                   Wield the dance of the shaman in the updated demo, now
                   available on Steam. Trial coming to Xbox and PlayStation this
                   week!
@@ -255,7 +255,7 @@ export default function Kengoa() {
 
   return (
     <section>
-      <title>Kengoa</title>
+      <title>Realm Builder</title>
       <div>
         <Sec_1 />
         <Discord />

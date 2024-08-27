@@ -9,14 +9,15 @@ export default function Footer() {
     <footer className="">
       <div className="mx-auto mt-20 w-[99%] max-w-[1180px] px-5 py-3 pb-10 md:w-11/12 md:px-0">
         <div className="mx-auto block justify-between md:flex">
-          <div className="mr-4 md:w-2/5 md:pr-28">
+          <div className="mr-4 mt-10 md:w-2/5 md:pr-28">
             <Image alt="" width={0} height={0} src={logo} />
             <p className="py-5">
-              Duis tincidunt quis bibendum magna dignissim lorem. Venenatis
-              laoreet facilisis nunc
+              Make Your Money
+              <br /> Do The Most
             </p>
+
             <a className="glow_btn rounded-2xl px-4 py-3" href="#">
-              info@yourwebsite.com
+              info@onigama.com
             </a>
           </div>
           <div className="flex flex-wrap md:my-0 md:w-3/5 md:justify-around">
@@ -26,21 +27,15 @@ export default function Footer() {
               </div>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/features"
+                href="/"
               >
-                Features
+                Home
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
                 href="/stock"
               >
                 stock
-              </Link>
-              <Link
-                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/contact"
-              >
-                contact
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
@@ -48,63 +43,81 @@ export default function Footer() {
               >
                 About Us
               </Link>
-            </div>
-            <div className="mt-10 pr-8">
-              <div className="mb-3 block font-creato_medium text-[#6f87a080]">
-                Template
-              </div>
-              <Link
-                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/features"
-              >
-                Features
-              </Link>
-              <Link
-                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/stock"
-              >
-                stock
-              </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
                 href="/contact"
               >
-                contact
+                Contact
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/blog"
+                href="/plan"
               >
-                blog
+                Plan
+              </Link>
+            </div>
+            <div className="mt-10 pr-8">
+              <div className="mb-3 block font-creato_medium text-[#6f87a080]">
+                Our services
+              </div>
+              <Link
+                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
+                href="about_us/gaming_and_mining"
+              >
+                Game
+              </Link>
+              <Link
+                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
+                href="about_us/cinema"
+              >
+                Cinema
+              </Link>
+              <Link
+                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
+                href="about_us/forex"
+              >
+                Forex
+              </Link>
+              <Link
+                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
+                href="about_us/minimg"
+              >
+                Crypto
               </Link>
             </div>
             <div className="mt-10 pr-8">
               <div className="mb-3 block font-creato_medium text-[#6f87a080]">
                 Social
               </div>
-              <Link
+              {/* <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
                 href="/features"
               >
                 Features
+              </Link> */}
+              <Link
+                className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
+                href=""
+              >
+                Instagram
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/stock"
+                href=""
               >
-                stock
+                Youtube
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/contact"
+                href=""
               >
-                contact
+                Facebook
               </Link>
               <Link
                 className="mb-3 block font-creato_medium text-[#6f87a0eb] hover:text-[#6f87a0a1]"
-                href="/about_us"
+                href=""
               >
-                About Us
+                GitHub
               </Link>
             </div>
           </div>

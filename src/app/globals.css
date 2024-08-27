@@ -273,37 +273,37 @@ body {
   }
 }
 
-/*--------kengoa---------*/
+/*--------realm_builder---------*/
 
-.kengoa_discord_bg {
-  background-image: url(../../public/kengoa/discord.jpg);
+.realm_builder_discord_bg {
+  background-image: url(../../public/realm_builder/discord.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.kengoa_src_2_bg_1 {
-  background-image: url(../../public/kengoa/sec2_bg_1.jpg);
+.realm_builder_src_2_bg_1 {
+  background-image: url(../../public/realm_builder/sec2_bg_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.kengoa_src_2_bg_2 {
-  background-image: url(../../public/kengoa/sec2_bg_2.jpg);
+.realm_builder_src_2_bg_2 {
+  background-image: url(../../public/realm_builder/sec2_bg_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.kengoa_src_2_bg_3 {
-  background-image: url(../../public/kengoa/sec2_bg_3.jpg);
+.realm_builder_src_2_bg_3 {
+  background-image: url(../../public/realm_builder/sec2_bg_3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.kengoa_src_3_bg {
-  background-image: url(../../public/kengoa/sec3_bg.jpg);
+.realm_builder_src_3_bg {
+  background-image: url(../../public/realm_builder/sec3_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.kengoa_card_shadow {
+.realm_builder_card_shadow {
   box-shadow: 0 3px 10px -2px #00000080;
 }
-.kengoa_card_shadow:hover {
+.realm_builder_card_shadow:hover {
   box-shadow: 2px 30px 28px -2px #00000080;
 }
 
