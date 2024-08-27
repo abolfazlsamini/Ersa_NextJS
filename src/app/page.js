@@ -980,9 +980,9 @@ export default function Home() {
                 </p>
                 <p className="py-10">
                   26% of the total shares are allocated to management. This
-                  portion of the stock is allocated to the company's managers
-                  and executive team to encourage them to perform better and
-                  increase the value of the company
+                  portion of the stock is allocated to the company&apos;s
+                  managers and executive team to encourage them to perform
+                  better and increase the value of the company
                 </p>
               </div>
             </div>

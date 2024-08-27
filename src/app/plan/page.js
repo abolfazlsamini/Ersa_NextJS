@@ -51,8 +51,8 @@ export default function Contact() {
   const Card_1_1 = () => {
     return (
       <div className="my-2 md:w-1/2">
-        <div className="glow-capture relative m-auto w-11/12 sm:m-0 sm:w-full">
-          <div className="glow group mx-0 flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
             <div className="flex-1">
               <div>
                 <Image
@@ -86,12 +86,282 @@ export default function Contact() {
   const Card_1_2 = () => {
     return (
       <div className="my-2 md:w-1/2">
-        <div className="glow-capture relative m-auto w-11/12 sm:m-0 sm:w-full">
-          <div className="glow group mx-0 flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
             <div className="flex-1">
               <div>
                 <Image
                   src={card_pic_2}
+                  width={0}
+                  height={0}
+                  alt=""
+                  className="mb-10 rounded-lg"
+                />
+              </div>
+              <div>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Trade in our Forex brokerage
+                </h2>
+
+                <p>
+                  We offer brokerage services in this market that enable users
+                  to trade currencies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#03d8ff" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_2_1 = () => {
+    const ref = useRef();
+    useEffect(() => {
+      if (ref.current) {
+        ref.current.style.setProperty("--glow-size", "12rem");
+      }
+    }, []);
+    return (
+      <div className="m-2">
+        <div className="glow-capture relative m-auto w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] px-5 py-10 shadow-lg shadow-black/80 sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="w-full">
+              <h2 className="mb-10 text-center text-3xl font-bold uppercase tracking-tighter md:text-5xl">
+                Monthly Profit
+              </h2>
+              <div className="overflow-hidden rounded-xl border border-white/5 bg-[#050c13] uppercase">
+                <div className="flex items-center border-y border-white/5 glow:border-glow glow:ring-1 glow:ring-glow">
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    Investment between $20 to $100
+                  </h2>
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    STOCk
+                  </h2>
+                </div>
+                <div className="flex items-center border-y border-white/5 glow:border-glow glow:ring-1 glow:ring-glow">
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    Investment between $110 to $1000
+                  </h2>
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    5% Monthly interest
+                  </h2>
+                </div>
+                <div className="flex items-center border-y border-white/5 glow:border-glow glow:ring-1 glow:ring-glow">
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    Investment between $1010 to $5000
+                  </h2>
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    6% monthly interest
+                  </h2>
+                </div>
+                <div className="flex items-center border-y border-white/5 glow:border-glow glow:ring-1 glow:ring-glow">
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    Investment between +$5000
+                  </h2>
+                  <h2 className="w-1/2 border-x border-white/5 p-5 text-lg sm:text-2xl">
+                    7% monthly interest
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            ref={ref}
+            className="glow-overlay"
+            style={{ "--glow-color": "#03d8ff" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_1_3 = () => {
+    return (
+      <div className="my-2 md:w-1/2">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="flex-1">
+              <div>
+                <Image
+                  src={card_pic_3}
+                  width={0}
+                  height={0}
+                  alt=""
+                  className="mb-10 rounded-lg"
+                />
+              </div>
+              <div>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Earn money and have fun by playing our Cryptocurrency games
+                </h2>
+
+                <p>
+                  Cryptocurrency games are digital games that utilize blockchain
+                  technology and cryptocurrencies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#ffde00" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_1_4 = () => {
+    return (
+      <div className="my-2 md:w-1/2">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="flex-1">
+              <div>
+                <Image
+                  src={card_pic_4}
+                  width={0}
+                  height={0}
+                  alt=""
+                  className="mb-10 rounded-lg"
+                />
+              </div>
+              <div>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Trade in our Forex brokerage
+                </h2>
+
+                <p>
+                  We offer brokerage services in this market that enable users
+                  to trade currencies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#03d8ff" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_1_5 = () => {
+    return (
+      <div className="my-2 md:w-1/2">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="flex-1">
+              <div>
+                <Image
+                  src={card_pic_5}
+                  width={0}
+                  height={0}
+                  alt=""
+                  className="mb-10 rounded-lg"
+                />
+              </div>
+              <div>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Earn money and have fun by playing our Cryptocurrency games
+                </h2>
+
+                <p>
+                  Cryptocurrency games are digital games that utilize blockchain
+                  technology and cryptocurrencies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#ffde00" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_1_6 = () => {
+    return (
+      <div className="my-2 md:w-1/2">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="flex-1">
+              <div>
+                <Image
+                  src={card_pic_6}
+                  width={0}
+                  height={0}
+                  alt=""
+                  className="mb-10 rounded-lg"
+                />
+              </div>
+              <div>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Trade in our Forex brokerage
+                </h2>
+
+                <p>
+                  We offer brokerage services in this market that enable users
+                  to trade currencies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#03d8ff" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_1_7 = () => {
+    return (
+      <div className="my-2 md:w-1/2">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="flex-1">
+              <div>
+                <Image
+                  src={card_pic_7}
+                  width={0}
+                  height={0}
+                  alt=""
+                  className="mb-10 rounded-lg"
+                />
+              </div>
+              <div>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Earn money and have fun by playing our Cryptocurrency games
+                </h2>
+
+                <p>
+                  Cryptocurrency games are digital games that utilize blockchain
+                  technology and cryptocurrencies
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="glow-overlay"
+            style={{ "--glow-color": "#ffde00" }}
+          ></div>
+        </div>
+      </div>
+    );
+  };
+  const Card_1_8 = () => {
+    return (
+      <div className="my-2 md:w-1/2">
+        <div className="glow-capture relative m-auto h-full w-11/12 sm:m-0 sm:w-full">
+          <div className="glow group mx-0 flex h-full flex-col flex-wrap items-center justify-center gap-6 rounded-2xl border-2 border-white/5 bg-[#09121de5] p-10 shadow-lg shadow-black/80 glow:border-glow glow:bg-glow/[.15] glow:ring-1 glow:ring-glow sm:p-16 md:ml-4 md:mr-2 md:flex-row md:items-start md:justify-between">
+            <div className="flex-1">
+              <div>
+                <Image
+                  src={card_pic_8}
                   width={0}
                   height={0}
                   alt=""
@@ -311,11 +581,27 @@ export default function Contact() {
           </p>
         </div>
       </section>
-      <div className="py-20">
-        <div className="mx-auto max-w-[1200px] px-2">
-          {/* <Avatar_card_1 /> */}
+      {/* <div className="py-20">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="flex flex-col justify-stretch px-2 md:flex-row">
+            <Card_1_1 />
+            <Card_1_2 />
+          </div>
+          <Card_2_1 />
+          <div className="flex flex-col justify-stretch px-2 md:flex-row">
+            <Card_1_3 />
+            <Card_1_4 />
+          </div>
+          <div className="flex flex-col justify-stretch px-2 md:flex-row">
+            <Card_1_5 />
+            <Card_1_6 />
+          </div>
+          <div className="flex flex-col justify-stretch px-2 md:flex-row">
+            <Card_1_7 />
+            <Card_1_8 />
+          </div>
         </div>
-      </div>
+      </div> */}
       <div className="mx-auto max-w-[1200px] pb-0">
         <Card_3 />
       </div>
