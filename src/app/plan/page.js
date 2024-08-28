@@ -332,7 +332,7 @@ export default function Contact() {
                   Rank 3 : When each line reaches $500,000. Reward: $50,000. If
                   you achieve Rank 3 three times within three months, you can
                   receive the above reward daily, and in addition to the cash
-                  reward, you will also receive 3% of the company's profits
+                  reward, you will also receive 3% of the company&apos;s profits
                 </p>
               </div>
             </div>

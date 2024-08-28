@@ -130,11 +130,11 @@ export default function Realm_builder() {
                   Experience An Original Scoundrel Story
                 </div>
                 <div className="my-2 font-neueplaktext_regular text-xl">
-                  Experience the thrill of an outlaw's high-stakes lifestyle.
-                  With Nix by your side, turn every situation to your advantage:
-                  engage in blaster combat, outmaneuver foes with stealth and
-                  gadgets, or seize the perfect moments to distract enemies and
-                  gain the upper hand
+                  Experience the thrill of an outlaw&apos;s high-stakes
+                  lifestyle. With Nix by your side, turn every situation to your
+                  advantage: engage in blaster combat, outmaneuver foes with
+                  stealth and gadgets, or seize the perfect moments to distract
+                  enemies and gain the upper hand
                 </div>
               </div>
             </div>
@@ -158,11 +158,11 @@ export default function Realm_builder() {
                   Embark On High-Stakes Missions
                 </div>
                 <div className="my-2 font-neueplaktext_regular text-xl">
-                  Embark on high-risk, high-reward missions for the galaxy's
-                  crime syndicates. Steal priceless treasures, infiltrate hidden
-                  locations, and outsmart your enemies as one of the galaxy's
-                  most wanted. Every decision you make shapes your constantly
-                  evolving reputation
+                  Embark on high-risk, high-reward missions for the
+                  galaxy&apos;s crime syndicates. Steal priceless treasures,
+                  infiltrate hidden locations, and outsmart your enemies as one
+                  of the galaxy&apos;s most wanted. Every decision you make
+                  shapes your constantly evolving reputation
                 </div>
               </div>
             </div>
