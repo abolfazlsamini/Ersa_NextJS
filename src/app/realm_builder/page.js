@@ -36,15 +36,14 @@ export default function Realm_builder() {
           <div className="absolute bottom-0 left-1/2 mx-auto flex w-11/12 -translate-x-1/2 flex-col items-center md:bottom-1/2 md:left-20 md:block md:w-1/2 md:translate-x-0 md:translate-y-1/2 2xl:left-1/4 2xl:w-1/4">
             <Image width={0} height={0} alt="" src={sec1_logo} />
             <div className="my-2 font-neueplaktext_regular text-xl">
-              Check out the Tales of Kenzera™: kengoa launch trailer and embark
-              on your adventure through the beautiful and treacherous lands of
-              Kenzera today!
+              Experience the first-ever open world Strategy game, Realm Builder,
+              Explore an Open World with New and Iconic Locations
             </div>
             <div className="my-2 w-full py-2 xl:flex">
-              <a className="font-kengoa relative my-2 block w-full cursor-pointer rounded-sm bg-[#0ecdd4] px-7 py-3 text-center text-xl uppercase text-black md:w-max md:hover:scale-105 xl:my-4 xl:mr-4 md:[&_*]:hover:scale-95">
+              <a className="relative my-2 block w-full cursor-pointer rounded-sm bg-[#0ecdd4] px-7 py-3 text-center font-zau text-xl uppercase text-black md:w-max md:hover:scale-105 xl:my-4 xl:mr-4 md:[&_*]:hover:scale-95">
                 <div className="">BUY NOW</div>
               </a>
-              <a className="font-kengoa relative mb-4 mt-2 block w-full cursor-pointer rounded-sm border-2 px-7 py-3 text-center text-xl uppercase text-white md:w-max md:hover:scale-105 xl:my-4 md:[&_*]:hover:scale-95">
+              <a className="relative mb-4 mt-2 block w-full cursor-pointer rounded-sm border-2 px-7 py-3 text-center font-zau text-xl uppercase text-white md:w-max md:hover:scale-105 xl:my-4 md:[&_*]:hover:scale-95">
                 <div className="">watch the trailer</div>
               </a>
             </div>
@@ -58,10 +57,10 @@ export default function Realm_builder() {
       <section>
         <div className="realm_builder_discord_bg">
           <div className="mx-auto flex flex-col items-center justify-between px-10 py-5 md:flex-row md:px-20 xl:w-3/4">
-            <div className="font-kengoa text-2xl font-bold uppercase text-black">
+            <div className="font-zau text-2xl font-bold uppercase text-black">
               Chat with the team on Discord
             </div>
-            <a className="font-kengoa relative my-2 block w-full cursor-pointer rounded-sm border-2 border-black px-7 py-3 text-center text-xl font-bold uppercase text-black md:w-max md:hover:scale-105 md:[&_div]:hover:scale-95">
+            <a className="relative my-2 block w-full cursor-pointer rounded-sm border-2 border-black px-7 py-3 text-center font-zau text-xl font-bold uppercase text-black md:w-max md:hover:scale-105 md:[&_div]:hover:scale-95">
               <div className="flex items-center">
                 <span className="pr-2">join now</span>
                 <span>
@@ -100,14 +99,14 @@ export default function Realm_builder() {
             <div className="md:w-1/2">
               <div className="mx-auto w-11/12 py-20 md:w-9/12 md:py-0">
                 <div className="font-t1korium text-[54px] 2xl:text-[100px]">
-                  BECOME THE WARRIOR SHAMAN
+                  Build Your Warrior
                 </div>
                 <div className="my-2 font-neueplaktext_regular text-xl">
-                  Embark on a poignant single-player story shaped by actor
-                  Abubakar Salim`&apos;s own experience with grief, discovering
-                  how love gives us the courage to press on after devastating
-                  loss. As kengoa, you must face your own emotions to become a
-                  worthy Nganga: a spiritual healer.
+                  Discover diverse locations filled with vibrant cities and
+                  lively cantinas. Speed through vast outdoor terrains on your
+                  speeder. Every destination offers fresh adventures, distinct
+                  challenges, and tempting rewards for those daring enough to
+                  embrace the risks
                 </div>
               </div>
             </div>
@@ -128,14 +127,14 @@ export default function Realm_builder() {
             <div className="md:w-1/2">
               <div className="mx-auto w-11/12 py-20 md:w-9/12 md:py-0">
                 <div className="font-t1korium text-[54px] 2xl:text-[100px]">
-                  BECOME THE WARRIOR SHAMAN
+                  Experience An Original Scoundrel Story
                 </div>
                 <div className="my-2 font-neueplaktext_regular text-xl">
-                  Embark on a poignant single-player story shaped by actor
-                  Abubakar Salim`&apos;s own experience with grief, discovering
-                  how love gives us the courage to press on after devastating
-                  loss. As kengoa, you must face your own emotions to become a
-                  worthy Nganga: a spiritual healer.
+                  Experience the thrill of an outlaw's high-stakes lifestyle.
+                  With Nix by your side, turn every situation to your advantage:
+                  engage in blaster combat, outmaneuver foes with stealth and
+                  gadgets, or seize the perfect moments to distract enemies and
+                  gain the upper hand
                 </div>
               </div>
             </div>
@@ -156,14 +155,14 @@ export default function Realm_builder() {
             <div className="md:w-1/2">
               <div className="mx-auto w-11/12 py-20 md:w-9/12 md:py-0">
                 <div className="font-t1korium text-[54px] 2xl:text-[100px]">
-                  BECOME THE WARRIOR SHAMAN
+                  Embark On High-Stakes Missions
                 </div>
                 <div className="my-2 font-neueplaktext_regular text-xl">
-                  Embark on a poignant single-player story shaped by actor
-                  Abubakar Salim`&apos;s own experience with grief, discovering
-                  how love gives us the courage to press on after devastating
-                  loss. As kengoa, you must face your own emotions to become a
-                  worthy Nganga: a spiritual healer.
+                  Embark on high-risk, high-reward missions for the galaxy's
+                  crime syndicates. Steal priceless treasures, infiltrate hidden
+                  locations, and outsmart your enemies as one of the galaxy's
+                  most wanted. Every decision you make shapes your constantly
+                  evolving reputation
                 </div>
               </div>
             </div>
@@ -190,16 +189,15 @@ export default function Realm_builder() {
                 className="hidden md:block"
               />
               <div className="px-5 md:py-4">
-                <div className="font-kengoa font-bold text-[#0ecdd4]">
+                <div className="font-zau font-bold text-[#0ecdd4]">
                   JUN 11, 2024
                 </div>
-                <div className="font-kengoa text-xl font-bold uppercase text-black xl:text-2xl">
-                  Play the new Tales of Kenzera™: kengoa demo now!
+                <div className="font-zau text-xl font-bold uppercase text-black xl:text-2xl">
+                  Play Realm Builders Demo
                 </div>
                 <div className="mt-2 hidden font-neueplaktext_regular text-xl text-black md:block">
-                  Wield the dance of the shaman in the updated demo, now
-                  available on Steam. Trial coming to Xbox and PlayStation this
-                  week!
+                  You can experience the trial version of Realm Builder in early
+                  2025
                 </div>
               </div>
             </div>
@@ -213,14 +211,14 @@ export default function Realm_builder() {
                 className="hidden md:block"
               />
               <div className="px-5 md:py-4">
-                <div className="font-kengoa font-bold text-[#0ecdd4]">
+                <div className="font-zau font-bold text-[#0ecdd4]">
                   JUN 11, 2024
                 </div>
-                <div className="font-kengoa text-xl font-bold uppercase text-black xl:text-2xl">
-                  Play the new Tales of Kenzera™: kengoa demo now!
+                <div className="font-zau text-xl font-bold uppercase text-black xl:text-2xl">
+                  Open World Strategic Game
                 </div>
                 <div className="mt-2 hidden font-neueplaktext_regular text-xl text-black md:block">
-                  Details regarding the 1.1.1 hotfix
+                  For the first time, you are facing an open world strategy game
                 </div>
               </div>
             </div>
@@ -234,16 +232,15 @@ export default function Realm_builder() {
                 className="hidden md:block"
               />
               <div className="px-5 md:py-4">
-                <div className="font-kengoa font-bold text-[#0ecdd4]">
+                <div className="font-zau font-bold text-[#0ecdd4]">
                   JUN 11, 2024
                 </div>
-                <div className="font-kengoa text-xl font-bold uppercase text-black xl:text-2xl">
-                  Play the new Tales of Kenzera™: kengoa demo now!
+                <div className="font-zau text-xl font-bold uppercase text-black xl:text-2xl">
+                  Build Your Warrior
                 </div>
                 <div className="mt-2 hidden font-neueplaktext_regular text-xl text-black md:block">
-                  Wield the dance of the shaman in the updated demo, now
-                  available on Steam. Trial coming to Xbox and PlayStation this
-                  week!
+                  Build your characters, make them strong and powerful, then
+                  sell them via NFT
                 </div>
               </div>
             </div>

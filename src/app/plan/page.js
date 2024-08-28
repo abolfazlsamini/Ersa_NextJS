@@ -65,12 +65,18 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Earn money and have fun by playing our Cryptocurrency games
+                  Section 1: Monthly Profit
                 </h2>
 
                 <p>
-                  Cryptocurrency games are digital games that utilize blockchain
-                  technology and cryptocurrencies
+                  Investment between $20 to $100: Shares
+                  <br />
+                  Investment between $110 to $1000: 5% monthly profit
+                  <br />
+                  Investment between $1010 to $5000: 6% monthly profit
+                  <br />
+                  Investment over $5000: 7% monthly profit
+                  <br />
                 </p>
               </div>
             </div>
@@ -100,12 +106,20 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Trade in our Forex brokerage
+                  Section 2 : Direct Selling
                 </h2>
 
                 <p>
-                  We offer brokerage services in this market that enable users
-                  to trade currencies
+                  In this section, you can earn a 5% reward from the invested
+                  amount by directly referring an investor
+                </p>
+                <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
+                  Section 3 : Matching Bonus
+                </h2>
+
+                <p>
+                  In this section, up to 15 levels, you receive 1% of the
+                  profits earned from each level
                 </p>
               </div>
             </div>
@@ -195,12 +209,13 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Earn money and have fun by playing our Cryptocurrency games
+                  Section 4: Daily Binary and Trinary
                 </h2>
 
                 <p>
-                  Cryptocurrency games are digital games that utilize blockchain
-                  technology and cryptocurrencies
+                  Binary : Earn 7% on the balanced side, and if a purchase is
+                  made in the third line, you receive an additional 5% from the
+                  third line
                 </p>
               </div>
             </div>
@@ -230,12 +245,15 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Trade in our Forex brokerage
+                  Section 5 : Monthly Trinary
                 </h2>
 
                 <p>
-                  We offer brokerage services in this market that enable users
-                  to trade currencies
+                  If you can establish three lines and attract $5000 of
+                  investment in each line, you will earn a point and join the
+                  Trinary Club. The reward calculation for Trinary Club members
+                  is that 15% of the profits from all members entering this club
+                  is divided monthly among the points
                 </p>
               </div>
             </div>
@@ -265,12 +283,14 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Earn money and have fun by playing our Cryptocurrency games
+                  Section 6 : Investors
                 </h2>
 
                 <p>
-                  Cryptocurrency games are digital games that utilize blockchain
-                  technology and cryptocurrencies
+                  An investor is someone who has invested at least $5000 and
+                  earns one point in the Investors Club for every $5000
+                  invested. The reward in this section is calculated similarly
+                  to Section 4
                 </p>
               </div>
             </div>
@@ -300,12 +320,19 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Trade in our Forex brokerage
+                  Section 7: Ranking
                 </h2>
 
                 <p>
-                  We offer brokerage services in this market that enable users
-                  to trade currencies
+                  Rank 1 : Having three lines with $50,000 investment in each
+                  line. Reward: $5,000
+                  <br />
+                  Rank 2 : When each line reaches $150,000. Reward: $15,000
+                  <br />
+                  Rank 3 : When each line reaches $500,000. Reward: $50,000. If
+                  you achieve Rank 3 three times within three months, you can
+                  receive the above reward daily, and in addition to the cash
+                  reward, you will also receive 3% of the company's profits
                 </p>
               </div>
             </div>
@@ -335,12 +362,16 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Earn money and have fun by playing our Cryptocurrency games
+                  Plan Details
                 </h2>
 
                 <p>
-                  Cryptocurrency games are digital games that utilize blockchain
-                  technology and cryptocurrencies
+                  Minimum investment: $20
+                  <br />
+                  Top-up investment: Unlimited from commission
+                  <br />
+                  The time frame for using the Binary and Trinary opportunities
+                  is 90 days
                 </p>
               </div>
             </div>
@@ -370,12 +401,13 @@ export default function Contact() {
               </div>
               <div>
                 <h2 className="mb-3 text-3xl font-bold tracking-tighter md:text-4xl">
-                  Trade in our Forex brokerage
+                  NFT KYC
                 </h2>
 
                 <p>
-                  We offer brokerage services in this market that enable users
-                  to trade currencies
+                  Each individual will receive an NFT KYC, serving as
+                  identification across all upcoming projects. The cost is $20,
+                  and it is paid once
                 </p>
               </div>
             </div>
@@ -581,7 +613,7 @@ export default function Contact() {
           </p>
         </div>
       </section>
-      {/* <div className="py-20">
+      <div className="py-20">
         <div className="mx-auto max-w-[1200px]">
           <div className="flex flex-col justify-stretch px-2 md:flex-row">
             <Card_1_1 />
@@ -601,7 +633,7 @@ export default function Contact() {
             <Card_1_8 />
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="mx-auto max-w-[1200px] pb-0">
         <Card_3 />
       </div>

@@ -395,7 +395,7 @@ export default function Stock() {
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl sm:text-2xl">
-                What is Ersa and how does it work?
+                How can I invest in the company ?
               </h2>
               <Image
                 src={x_icon}
@@ -417,9 +417,9 @@ export default function Stock() {
               }
             >
               <p>
-                Rutrum placerat condimentum eget diam erat et. Risus tellus
-                euismod diam tristique pellentesque. Nec sodales nulla luctus eu
-                ornare aliquam enim mauris. Ut velit malesuada.
+                To invest, you must first create an account on our website.
+                Then, by transferring capital through various payment methods,
+                you can buy the shares you want and participate in our projects
               </p>
             </div>
           </div>
@@ -437,7 +437,7 @@ export default function Stock() {
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl sm:text-2xl">
-                What is Ersa and how does it work?
+                Is there a minimum investment amount ?
               </h2>
               <Image
                 src={x_icon}
@@ -459,9 +459,9 @@ export default function Stock() {
               }
             >
               <p>
-                Rutrum placerat condimentum eget diam erat et. Risus tellus
-                euismod diam tristique pellentesque. Nec sodales nulla luctus eu
-                ornare aliquam enim mauris. Ut velit malesuada.
+                Yes, the minimum investment amount varies depending on the
+                project. For example, in some projects, you can invest with as
+                little as $100
               </p>
             </div>
           </div>
@@ -479,7 +479,7 @@ export default function Stock() {
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl sm:text-2xl">
-                What is Ersa and how does it work?
+                How are the profits of investments calculated and paid ?
               </h2>
               <Image
                 src={x_icon}
@@ -501,9 +501,11 @@ export default function Stock() {
               }
             >
               <p>
-                Rutrum placerat condimentum eget diam erat et. Risus tellus
-                euismod diam tristique pellentesque. Nec sodales nulla luctus eu
-                ornare aliquam enim mauris. Ut velit malesuada.
+                The profits of investments depend on the performance of the
+                projects. After the completion of the project, the profit will
+                be credited to your account in proportion to the shares you own.
+                Also, as the stock price increases, you can sell your shares at
+                a higher price
               </p>
             </div>
           </div>
@@ -521,7 +523,7 @@ export default function Stock() {
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl sm:text-2xl">
-                What is Ersa and how does it work?
+                Is it possible to withdraw funds ?
               </h2>
               <Image
                 src={x_icon}
@@ -543,9 +545,9 @@ export default function Stock() {
               }
             >
               <p>
-                Rutrum placerat condimentum eget diam erat et. Risus tellus
-                euismod diam tristique pellentesque. Nec sodales nulla luctus eu
-                ornare aliquam enim mauris. Ut velit malesuada.
+                Yes, you can withdraw your funds. However, depending on market
+                conditions and the type of project you have invested, withdrawal
+                conditions may vary
               </p>
             </div>
           </div>
@@ -563,7 +565,7 @@ export default function Stock() {
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl sm:text-2xl">
-                What is Ersa and how does it work?
+                Is there any risk in investing in this company ?
               </h2>
               <Image
                 src={x_icon}
@@ -585,9 +587,9 @@ export default function Stock() {
               }
             >
               <p>
-                Rutrum placerat condimentum eget diam erat et. Risus tellus
-                euismod diam tristique pellentesque. Nec sodales nulla luctus eu
-                ornare aliquam enim mauris. Ut velit malesuada.
+                Yes, every type of investment comes with risk. We recommend that
+                you study all the conditions and risks related to the projects
+                and make a careful decision before investing
               </p>
             </div>
           </div>
@@ -605,7 +607,7 @@ export default function Stock() {
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl sm:text-2xl">
-                What is Ersa and how does it work?
+                How can I track the progress of projects ?
               </h2>
               <Image
                 src={x_icon}
@@ -627,9 +629,10 @@ export default function Stock() {
               }
             >
               <p>
-                Rutrum placerat condimentum eget diam erat et. Risus tellus
-                euismod diam tristique pellentesque. Nec sodales nulla luctus eu
-                ornare aliquam enim mauris. Ut velit malesuada.
+                You can view the most up-to-date information and reports related
+                to your investment projects through your account dashboard.
+                Also, we regularly notify you of information via email and
+                e-newsletters
               </p>
             </div>
           </div>
@@ -933,13 +936,7 @@ export default function Stock() {
           <div className="rounded-full bg-[#eb728126] px-3 py-1 text-sm uppercase text-[#eb7281]">
             FAQ
           </div>
-          <h1 className="mb-10 mt-5 text-center">
-            Get answers to common questions
-          </h1>
-          <p className="md:w-1/2">
-            Senectus diam purus praesent vestibulum nisi accumsan justo
-            porttitor sed. Mattis sem nibh ut donec non augue.
-          </p>
+          <h1 className="mt-5 text-center">Get answers to common questions</h1>
         </div>
       </section>
       <div className="mx-auto max-w-[1200px] pb-20">
